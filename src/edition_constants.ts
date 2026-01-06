@@ -3,6 +3,7 @@ import famos from './assets/org/famos.jpg';
 import gosia from './assets/org/gosia.jpg';
 import nowy from './assets/org/nowy.jpg';
 import ojo from './assets/org/ojo.jpg';
+import olca from './assets/org/olca.jpg';
 import orzech from './assets/org/orzech.jpg';
 import ozlo from './assets/org/ozlo.jpg';
 import ponczo from './assets/org/ponczo.jpg';
@@ -53,6 +54,13 @@ export const ORGANIZACJA = [
     color: 'etherealBlue',
     initials: 'MO',
     image: tyna,
+  },
+  {
+    name: "Aleksandra 'Olca' Gąsiorowska",
+    role: 'Social media, zachowanie ładu, GG 2026',
+    color: 'etherealBlue',
+    initials: 'MO',
+    image: olca,
   },
   {
     name: "Michał 'Nowy' Bąk",

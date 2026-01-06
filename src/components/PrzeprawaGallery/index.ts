@@ -1,0 +1,1 @@
+export { PrzeprawaGallery } from './PrzeprawaGallery';

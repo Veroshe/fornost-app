@@ -1,0 +1,2 @@
+export { Socials } from './Socials';
+

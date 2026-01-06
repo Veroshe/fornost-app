@@ -1,0 +1,130 @@
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 33, 46, 0.05) 0%,
+    rgba(45, 77, 102, 0.15) 50%,
+    rgba(47, 82, 66, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titleWrapper {
+  position: relative;
+}
+
+.logoImage {
+  max-width: 100%;
+  width: 25rem;
+  height: auto;
+}
+
+@keyframes logoGlow {
+  from {
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))
+      drop-shadow(0 0 30px rgba(248, 249, 250, 0.3));
+  }
+  to {
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))
+      drop-shadow(0 0 50px rgba(248, 249, 250, 0.5)) drop-shadow(0 0 70px rgba(184, 207, 224, 0.3));
+  }
+}
+
+.description {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(45, 77, 102, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+.tagline {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 650px;
+}
+
+.controls {
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+
+.control:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    letter-spacing: 0.3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 0.2rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .control {
+    width: 100%;
+  }
+}
+

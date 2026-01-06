@@ -1,11 +1,16 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { Stack } from '@mantine/core';
+import { Hero } from '../components/Hero';
+import { Info } from '../components/Info';
+import { Socials } from '../components/Socials';
+import { AboutPage } from './About.page';
 
 export function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Stack gap={0}>
+      <Hero />
+      <AboutPage />
+      <Socials />
+      {/* <ThemeShowcase /> */}
+    </Stack>
   );
 }

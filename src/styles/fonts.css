@@ -1,0 +1,22 @@
+/* Aniron - czcionka inspirowana Władcą Pierścieni */
+@font-face {
+  font-family: 'Aniron';
+  src: url('https://cdn.jsdelivr.net/gh/vicenteguerra/aniron@master/Aniron-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/vicenteguerra/aniron@master/Aniron-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Aniron';
+  src: url('https://cdn.jsdelivr.net/gh/vicenteguerra/aniron@master/Aniron-Bold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/vicenteguerra/aniron@master/Aniron-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+/* Cinzel - elegancka czcionka fantasy z polskimi znakami */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+

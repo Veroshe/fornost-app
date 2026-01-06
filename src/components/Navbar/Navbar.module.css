@@ -1,0 +1,96 @@
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logoImage {
+  max-width: 100%;
+  width: 8rem;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.logoImage.logoScrolled {
+  width: 6rem;
+}
+
+.logo {
+  color: white;
+  letter-spacing: 2px;
+  font-family: Aniron, Georgia, 'Times New Roman', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.specialLink {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.specialLink::after {
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+.specialLink:hover {
+  color: #ffed4a;
+  background-color: rgba(255, 215, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+
+  .logoImage {
+    width: 5rem;
+  }
+
+  .logoImage.logoScrolled {
+    width: 4rem;
+  }
+}
+

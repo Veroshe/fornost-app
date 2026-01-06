@@ -17,7 +17,8 @@
     "vitest:watch": "vitest",
     "test": "npm run typecheck && npm run prettier && npm run lint && npm run vitest && npm run build",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/carousel": "^8.3.10",
@@ -30,6 +31,7 @@
     "axios": "^1.13.2",
     "embla-carousel": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.4"
@@ -44,6 +46,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "@types/gh-pages": "^6",
     "@types/node": "^24.7.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",

@@ -1,4 +1,4 @@
-import { Burger, Button, Container, Group, Menu } from '@mantine/core';
+import { Box, Burger, Button, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import logoImage from '../../assets/logo-white.png';
 import { BuyButton } from '../common/BuyButton';
@@ -32,13 +32,16 @@ export function Navbar() {
   return (
     <div className={`${classes.header} ${isScrolled ? classes.scrolled : ''}`}>
       <Container size="xl" className={classes.inner}>
-        <Group gap={5} visibleFrom="sm" component="a" href="/">
-          <img
-            src={logoImage}
-            alt="Fornost - Konwent Larpowy"
-            className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
-          />
-        </Group>
+        <Box visibleFrom="sm">
+          <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
+            <img
+              src={logoImage}
+              alt="Fornost - Konwent Larpowy"
+              className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
+              style={{ display: 'block' }}
+            />
+          </a>
+        </Box>
 
         <Group gap={5} visibleFrom="sm">
           {items}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Box, Burger, Button, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import logoImage from '../../assets/logo-white.png';
@@ -17,30 +18,30 @@ export function Navbar() {
   const isScrolled = scroll.y > 50;
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link}
       className={`${classes.link} ${link.special ? classes.specialLink : ''}`}
       onClick={() => {
         close();
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (
     <div className={`${classes.header} ${isScrolled ? classes.scrolled : ''}`}>
       <Container size="xl" className={classes.inner}>
         <Box visibleFrom="sm">
-          <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
+          <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
             <img
               src={logoImage}
               alt="Fornost - Konwent Larpowy"
               className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
               style={{ display: 'block' }}
             />
-          </a>
+          </Link>
         </Box>
 
         <Group gap={5} visibleFrom="sm">
@@ -53,11 +54,13 @@ export function Navbar() {
 
         {/* Mobile */}
         <Group hiddenFrom="sm" style={{ flex: 1 }} justify="space-between">
-          <img
-            src={logoImage}
-            alt="Fornost - Konwent Larpowy"
-            className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
-          />
+          <Link to="/">
+            <img
+              src={logoImage}
+              alt="Fornost - Konwent Larpowy"
+              className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
+            />
+          </Link>
 
           <Menu shadow="md" width={200} opened={opened} onChange={toggle}>
             <Menu.Target>
@@ -66,7 +69,7 @@ export function Navbar() {
 
             <Menu.Dropdown>
               {links.map((link) => (
-                <Menu.Item key={link.label} component="a" href={link.link}>
+                <Menu.Item key={link.label} component={Link} to={link.link}>
                   {link.label}
                 </Menu.Item>
               ))}

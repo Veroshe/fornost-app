@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { GalleryPage } from './pages/GalleryPage.page';
 import { GGPage } from './pages/GG.page';
@@ -6,7 +6,7 @@ import { HomePage } from './pages/Home.page';
 import { OrganizationPage } from './pages/Organization.page';
 import { PlacePage } from './pages/Place.page';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: (

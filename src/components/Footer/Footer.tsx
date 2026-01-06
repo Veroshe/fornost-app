@@ -1,4 +1,5 @@
 import { IconBrandFacebook, IconBrandInstagram, IconMail } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
 import { ActionIcon, Anchor, Container, Group, Stack, Text } from '@mantine/core';
 import logoImage from '@/assets/logo-white.png';
 import { KAROLINA_TUL_URL, MACIEJ_MARGIELSKI_URL } from '@/edition_constants';
@@ -49,7 +50,13 @@ export function Footer() {
         <div className={classes.linksSection}>
           <Stack gap="xs">
             {navLinks.map((link) => (
-              <Anchor key={link.label} href={link.link} className={classes.link} size="sm">
+              <Anchor
+                key={link.label}
+                component={Link}
+                to={link.link}
+                className={classes.link}
+                size="sm"
+              >
                 {link.label}
               </Anchor>
             ))}

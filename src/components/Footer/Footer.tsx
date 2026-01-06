@@ -39,10 +39,15 @@ export function Footer() {
       <Container size="xl" className={classes.inner}>
         <div className={classes.logoSection}>
           <img src={logoImage} alt="Fornost" className={classes.logo} />
-          <Text size="sm" c="dimmed" className={classes.description}>
+          <Text
+            size="sm"
+            c="dimmed"
+            className={classes.description}
+            style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}
+          >
             Konwent Larpowy w Czatachowej
           </Text>
-          <Text size="sm" c="dimmed">
+          <Text size="sm" c="dimmed" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>
             25.07 - 02.08.2026
           </Text>
         </div>
@@ -91,10 +96,10 @@ export function Footer() {
 
       <Container size="xl" className={classes.afterFooter}>
         <Stack gap="xs" align="center">
-          <Text c="dimmed" size="sm">
+          <Text c="dimmed" size="sm" style={{ fontSize: 'clamp(0.7rem, 2vw, 0.875rem)' }}>
             © {currentYear} Fornost - Konwent Larpowy. Wszelkie prawa zastrzeżone.
           </Text>
-          <Text c="dimmed" size="sm">
+          <Text c="dimmed" size="sm" style={{ fontSize: 'clamp(0.7rem, 2vw, 0.875rem)' }}>
             Zdjęcia:{' '}
             <Anchor
               href={MACIEJ_MARGIELSKI_URL}

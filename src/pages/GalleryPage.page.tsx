@@ -82,7 +82,13 @@ export function GalleryPage() {
                 size="lg"
                 color="etherealBlue"
                 onClick={() => setSelectedGallery('przeprawa')}
-                style={{ minWidth: '300px' }}
+                style={{
+                  minWidth: 'clamp(250px, 60vw, 300px)',
+                  width: '100%',
+                  maxWidth: '400px',
+                  fontSize: 'clamp(0.875rem, 2vw, 1rem)',
+                  padding: 'clamp(0.625rem, 2vw, 0.875rem) clamp(1rem, 3vw, 1.25rem)',
+                }}
               >
                 Przeprawa Królów - Gra Główna 2025
               </Button>
@@ -90,7 +96,13 @@ export function GalleryPage() {
                 size="lg"
                 color="forestGreen"
                 onClick={() => setSelectedGallery('piknik')}
-                style={{ minWidth: '300px' }}
+                style={{
+                  minWidth: 'clamp(250px, 60vw, 300px)',
+                  width: '100%',
+                  maxWidth: '400px',
+                  fontSize: 'clamp(0.875rem, 2vw, 1rem)',
+                  padding: 'clamp(0.625rem, 2vw, 0.875rem) clamp(1rem, 3vw, 1.25rem)',
+                }}
               >
                 Piknik w Domu Beorna - Gra Główna 2024
               </Button>

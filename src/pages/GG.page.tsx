@@ -95,7 +95,7 @@ const linksData = [
   {
     icon: IconFileDescription,
     label: 'Design Doc',
-    href: 'https://drive.google.com/file/d/1QU64QlryYZ02fDxLP22/view',
+    href: 'https://drive.google.com/file/d/1QU64QlryYZ02fDxLP22N9obZPfsBXgx4/view?fbclid=IwY2xjawPKTRxleHRuA2FlbQIxMABicmlkETF0TFNjc3dxQVVuTUJncFZhc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrmGvSRSeRpT-ThL101GyX10friBLlUnILAM1UwOvf8gT2UBpB6966YKIxXO_aem_q47a1mDUIMZR6cSoIX6DPw',
     color: 'etherealBlue',
     available: true,
   },

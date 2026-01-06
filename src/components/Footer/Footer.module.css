@@ -86,17 +86,19 @@
 /* Mobile */
 @media (max-width: 768px) {
     .footer {
-        margin-top: 2rem;
-        padding-top: 2rem;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 
     .inner {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.25rem;
+        padding-bottom: 1rem;
     }
 
     .logo {
-        width: 8rem;
+        width: 6rem;
     }
 
     .logoSection,
@@ -104,15 +106,30 @@
     .socialSection {
         text-align: center;
         align-items: center;
+        gap: 0.25rem;
     }
 
     .description {
         max-width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .link {
+        font-size: 0.85rem;
+    }
+
+    .socialIcon {
+        width: 36px;
+        height: 36px;
     }
 
     .afterFooter {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .afterFooter Text {
+        font-size: 0.75rem;
     }
 }
 

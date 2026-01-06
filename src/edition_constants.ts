@@ -16,6 +16,8 @@ export const PROGRAM_SUBMISSION_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScmwMNDNLM030eFltJXix-dTNooU5f0IoRgMbMT-_PACKFK-g/viewform';
 export const MACIEJ_MARGIELSKI_URL = 'https://www.instagram.com/mmargiel/';
 export const KAROLINA_TUL_URL = 'https://www.instagram.com/tulfotografie/';
+export const NEWSLETTER_URL =
+  'https://c1f8922b.sibforms.com/serve/MUIFAEdcN0Kk0uNcgoA6lZrlcErakbe41Dy6Kt2beNcfH7ZzWFUE3MECYVH2jv9IAAtyfIbmzWsKRSdm7tXXsEgUR_OZY2zPGExbqo6nXGr1OCEymzTmeOtBwtfGAUGscD_LdtxKS3rODnQP-5TEPUnTOhhpSqy-cTKj3VaiOwqpkVr_k68q8A2MT0eQpJa4wciREHK4WMJCICRL';
 
 export const ORGANIZACJA = [
   {

@@ -14,7 +14,9 @@ export const BuyButton = () => {
       rel="noreferrer"
       leftSection={<IconTicket size={20} />}
       style={{
-        minWidth: 200,
+        minWidth: 'clamp(160px, 40vw, 200px)',
+        fontSize: 'clamp(0.875rem, 2vw, 1rem)',
+        padding: 'clamp(0.625rem, 2vw, 0.875rem) clamp(1rem, 3vw, 1.375rem)',
       }}
     >
       Kup bilet

@@ -66,18 +66,30 @@ export function AboutPage() {
                   </Text>
 
                   <Stack gap="sm">
-                    <Group gap="sm">
-                      <ThemeIcon variant="light" color="earthBrown" size="lg" radius="md">
-                        <IconCalendar size={20} />
+                    <Group gap="sm" align="center" wrap="nowrap">
+                      <ThemeIcon
+                        variant="light"
+                        color="earthBrown"
+                        size="md"
+                        radius="md"
+                        style={{ flexShrink: 0 }}
+                      >
+                        <IconCalendar size={16} />
                       </ThemeIcon>
-                      <Text size="lg" fw={600} c="forestGreen.9">
+                      <Text size="lg" fw={600} c="forestGreen.9" style={{ lineHeight: 1.2 }}>
                         25.07 - 02.08.2026
                       </Text>
                     </Group>
 
-                    <Group gap="sm">
-                      <ThemeIcon variant="light" color="earthBrown" size="lg" radius="md">
-                        <IconMapPin size={20} />
+                    <Group gap="sm" align="center" wrap="nowrap">
+                      <ThemeIcon
+                        variant="light"
+                        color="earthBrown"
+                        size="md"
+                        radius="md"
+                        style={{ flexShrink: 0 }}
+                      >
+                        <IconMapPin size={16} />
                       </ThemeIcon>
                       <Anchor
                         href="https://maps.app.goo.gl/hLHNpfuDEJDQAXvu7"
@@ -86,6 +98,7 @@ export function AboutPage() {
                         size="lg"
                         fw={500}
                         td="underline"
+                        style={{ lineHeight: 1.2 }}
                       >
                         Czatachowa, Jura Krakowsko-Częstochowska
                       </Anchor>
@@ -426,7 +439,7 @@ export function AboutPage() {
                         <IconUserShield size={20} />
                       </ThemeIcon>
                       <Text size="lg" c="etherealBlue.9" lh={1.7}>
-                        <Text span fw={600}>
+                        <Text span fw={500}>
                           Osoby bezpieczeństwa
                         </Text>{' '}
                         - w razie sytuacji kryzysowej, w której czujesz się zagrożony lub

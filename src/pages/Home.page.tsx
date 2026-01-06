@@ -1,6 +1,7 @@
 import { Stack } from '@mantine/core';
 import { Hero } from '../components/Hero';
 import { Info } from '../components/Info';
+import { NewsletterBanner } from '../components/NewsletterBanner';
 import { Socials } from '../components/Socials';
 import { AboutPage } from './About.page';
 
@@ -9,6 +10,7 @@ export function HomePage() {
     <Stack gap={0}>
       <Hero />
       <AboutPage />
+      <NewsletterBanner />
       <Socials />
       {/* <ThemeShowcase /> */}
     </Stack>

@@ -1,6 +1,8 @@
 import blazej from './assets/org/blazej.png';
+import eldarion from './assets/org/eldarion.jpeg';
 import famos from './assets/org/famos.jpg';
 import gosia from './assets/org/gosia.jpg';
+import igriana from './assets/org/igriana.jpg';
 import nowy from './assets/org/nowy.jpg';
 import ojo from './assets/org/ojo.jpg';
 import olca from './assets/org/olca.jpg';
@@ -10,6 +12,10 @@ import ponczo from './assets/org/ponczo.jpg';
 import sharp from './assets/org/sharp.jpg';
 import tyna from './assets/org/tyna.jpg';
 import wero from './assets/org/wero.jpg';
+
+export const FACEBOOK_URL = 'https://www.facebook.com/events/741426278765069';
+export const INSTAGRAM_URL = 'https://www.instagram.com/konwent_fornost/';
+export const DISCORD_URL = 'https://discord.gg/uBxvT9rMGM';
 
 export const TICKET_FORM_URL = 'https://forms.gle/KQCgwXc6iCkGs6xu7';
 export const UBOJNIA_URL = 'https://www.facebook.com/profile.php?id=100063486788417';
@@ -50,14 +56,14 @@ export const ORGANIZACJA = [
   },
   {
     name: "Martyna 'Tyna' Królak",
-    role: 'Grafika, oprawa wizualna, GG 2026',
+    role: 'Grafika, oprawa wizualna, MG Gry Głównej 2026',
     color: 'etherealBlue',
     initials: 'MO',
     image: tyna,
   },
   {
     name: "Aleksandra 'Olca' Gąsiorowska",
-    role: 'Social media, zachowanie ładu, GG 2026',
+    role: 'Social media, zachowanie ładu, MG Gry Głównej 2026',
     color: 'etherealBlue',
     initials: 'MO',
     image: olca,
@@ -71,20 +77,20 @@ export const ORGANIZACJA = [
   },
   {
     name: "Mikołaj 'Ojo' Para",
-    role: 'Budowlanki, wsparcie ogólne',
+    role: 'Budowlanki, wsparcie ogólne, GG 2026 - questy dla najmłodszych',
     color: 'etherealBlue',
     initials: 'MO',
     image: ojo,
   },
   {
-    name: "Tomasz 'Ozło' Bran",
+    name: "Tomasz 'Ozło' Baran",
     role: 'Budowlanki, wsparcie ogólne',
     color: 'etherealBlue',
     initials: 'MO',
     image: ozlo,
   },
   {
-    name: "Przemysław 'Sychta' Saverok",
+    name: "Przemysław 'Saverok' Sychta",
     role: 'Sponsorzy, wsparcie prawne',
     color: 'etherealBlue',
     initials: 'MO',
@@ -95,7 +101,7 @@ export const ORGANIZACJA = [
     role: 'Wsparcie organizacyjne, skryba',
     color: 'etherealBlue',
     initials: 'MO',
-    image: ozlo,
+    image: igriana,
   },
   {
     name: "Filip 'Famos' Wróblewski",
@@ -117,5 +123,12 @@ export const ORGANIZACJA = [
     color: 'etherealBlue',
     initials: 'MO',
     image: blazej,
+  },
+  {
+    name: "Michał 'Eldarion' Skerczyński",
+    role: 'GG 2026 - questy dla najmłodszych',
+    color: 'etherealBlue',
+    initials: 'MO',
+    image: eldarion,
   },
 ];

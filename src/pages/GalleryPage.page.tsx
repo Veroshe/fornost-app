@@ -71,7 +71,15 @@ export function GalleryPage() {
       )}
 
       {selectedGallery === null && (
-        <Box component="section" py={{ base: 'lg' }}>
+        <Box
+          component="section"
+          py={{ base: 'lg' }}
+          style={{
+            minHeight: 'calc(100vh - 400px)',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Container size="xl">
             <Text size="lg" ta="center" mb="xl" c="dimmed">
               Wybierz galerię, którą chcesz zobaczyć

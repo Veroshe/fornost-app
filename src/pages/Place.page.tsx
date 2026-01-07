@@ -46,7 +46,11 @@ export function PlacePage() {
         </Container>
       </Box>
 
-      <Box component="section" py={{ base: 'xl', md: 80 }}>
+      <Box
+        component="section"
+        py={{ base: 'xl', md: 80 }}
+        style={{ minHeight: 'calc(100vh - 300px)' }}
+      >
         <Container size="xl">
           <Stack gap="xl">
             {/* Co zabrać */}

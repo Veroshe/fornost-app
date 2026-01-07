@@ -2,18 +2,23 @@ import { IconBrandFacebook, IconBrandInstagram, IconMail } from '@tabler/icons-r
 import { Link } from 'react-router-dom';
 import { ActionIcon, Anchor, Container, Group, Stack, Text } from '@mantine/core';
 import logoImage from '@/assets/logo-white.png';
-import { KAROLINA_TUL_URL, MACIEJ_MARGIELSKI_URL } from '@/edition_constants';
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  KAROLINA_TUL_URL,
+  MACIEJ_MARGIELSKI_URL,
+} from '@/edition_constants';
 import classes from './Footer.module.css';
 
 const socialLinks = [
   {
     icon: IconBrandFacebook,
-    link: 'https://www.facebook.com/fornost.konwent',
+    link: FACEBOOK_URL,
     label: 'Facebook',
   },
   {
     icon: IconBrandInstagram,
-    link: 'https://www.instagram.com/fornost_konwent/',
+    link: INSTAGRAM_URL,
     label: 'Instagram',
   },
   {
@@ -24,7 +29,6 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { link: '/about', label: 'O Konwencie' },
   { link: '/gallery', label: 'Galeria' },
   { link: '/place', label: 'Na miejscu' },
   { link: '/organization', label: 'Organizacja' },

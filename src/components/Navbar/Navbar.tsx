@@ -75,9 +75,7 @@ export function Navbar() {
               ))}
               <Menu.Divider />
               <Menu.Item>
-                <Button variant="filled" color="etherealBlue" fullWidth size="sm">
-                  Zapisz się
-                </Button>
+                <BuyButton />
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>

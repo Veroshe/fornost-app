@@ -36,7 +36,11 @@ export function OrganizationPage() {
         </Container>
       </Box>
 
-      <Box component="section" py={{ base: 'xl', md: 80 }}>
+      <Box
+        component="section"
+        py={{ base: 'xl', md: 80 }}
+        style={{ minHeight: 'calc(100vh - 300px)' }}
+      >
         <Container size="xl">
           <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} spacing="lg">
             {ORGANIZACJA.map((member) => (

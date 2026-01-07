@@ -1,6 +1,7 @@
 import { IconBrandDiscord, IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 import { Box, Card, Container, Grid, Text, Title } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
+import { DISCORD_URL, FACEBOOK_URL, INSTAGRAM_URL } from '@/edition_constants';
 import classes from './Socials.module.css';
 
 const socialItems = [
@@ -8,20 +9,20 @@ const socialItems = [
     icon: IconBrandFacebook,
     title: 'Facebook',
     description: 'Śledź wydarzenie na Facebooku, gdzie publikujemy najważniejsze informacje.',
-    link: 'https://www.facebook.com/fornostlarp',
+    link: FACEBOOK_URL,
   },
   {
     icon: IconBrandDiscord,
     title: 'Discord',
     description:
       'Dołącz do naszego serwera na Discordzie - bądź na bieżąco z informacjami na temat obecnej i przyszłych edycji konwentu, a przy okazji zintegruj się z naszą społecznością.',
-    link: 'https://discord.gg/uBxvT9rMGM',
+    link: DISCORD_URL,
   },
   {
     icon: IconBrandInstagram,
     title: 'Instagram',
     description: 'Na Instagramie znajdziesz między innymi zdjęcia z poprzednich edycji konwentu.',
-    link: 'https://www.instagram.com/fornostlarp',
+    link: INSTAGRAM_URL,
   },
 ];
 

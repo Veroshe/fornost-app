@@ -12,6 +12,8 @@ import ponczo from './assets/org/ponczo.jpg';
 import sharp from './assets/org/sharp.jpg';
 import tyna from './assets/org/tyna.jpg';
 import wero from './assets/org/wero.jpg';
+import saverok from './assets/org/saverok.jpg';
+import porecki from './assets/org/porecki.png';
 
 export const FACEBOOK_URL = 'https://www.facebook.com/events/741426278765069';
 export const INSTAGRAM_URL = 'https://www.instagram.com/konwent_fornost/';
@@ -34,7 +36,7 @@ export const ORGANIZACJA = [
     image: wero,
   },
   {
-    name: 'Małgorzata Jakubowska',
+    name: 'Małgorzata Brzoska',
     role: 'Program, oprawa muzyczna, osoba bezpieczeństwa',
     color: 'forestGreen',
     initials: 'MJ',
@@ -94,7 +96,7 @@ export const ORGANIZACJA = [
     role: 'Sponsorzy, wsparcie prawne',
     color: 'etherealBlue',
     initials: 'MO',
-    image: ozlo,
+    image: saverok,
   },
   {
     name: 'Igriana Bartoszek',
@@ -130,5 +132,12 @@ export const ORGANIZACJA = [
     color: 'etherealBlue',
     initials: 'MO',
     image: eldarion,
+  },
+    {
+    name: "Michał Poręcki",
+    role: 'MG Gry Głównej 2026',
+    color: 'etherealBlue',
+    initials: 'MO',
+    image: porecki,
   },
 ];

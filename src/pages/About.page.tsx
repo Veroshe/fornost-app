@@ -363,49 +363,6 @@ export function AboutPage() {
                   />
                 </Grid.Col>
               </Grid>
-              <Box
-                p="lg"
-                mt="lg"
-                style={{
-                  background:
-                    'linear-gradient(135deg, rgba(114, 150, 131, 0.12) 0%, rgba(81, 127, 168, 0.08) 100%)',
-                  border: '2px solid rgba(114, 150, 131, 0.3)',
-                  borderRadius: 'var(--mantine-radius-md)',
-                }}
-              >
-                <Group gap="md" mb="sm" wrap="nowrap">
-                  <ThemeIcon variant="light" color="forestGreen" size="xl" radius="md">
-                    <IconClipboardList size={24} />
-                  </ThemeIcon>
-                  <Stack gap={4}>
-                    <Text size="lg" fw={600} c="forestGreen.8">
-                      Zgłoszenia punktów programu
-                    </Text>
-                    <Text size="sm" c="etherealBlue.8">
-                      Termin: do{' '}
-                      <Text span fw={700}>
-                        14 lutego 2026
-                      </Text>
-                    </Text>
-                  </Stack>
-                </Group>
-                <Text size="md" c="etherealBlue.9" lh={1.6} mb="md">
-                  Masz pomysł na punkt programu? Chcesz poprowadzić larpa, konkurs lub inną
-                  atrakcję? Zgłoś się do nas!
-                </Text>
-                <Button
-                  component="a"
-                  href={PROGRAM_SUBMISSION_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="filled"
-                  color="forestGreen"
-                  size="md"
-                  leftSection={<IconClipboardList size={18} />}
-                >
-                  Zgłoś punkt programu
-                </Button>
-              </Box>
             </Card>
 
             {/* Bezpieczeństwo */}

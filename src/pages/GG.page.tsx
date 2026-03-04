@@ -101,15 +101,16 @@ const linksData = [
   },
   {
     icon: IconScript,
-    label: 'Mechanika gry',
-    description: 'początek 2026',
-    color: 'mistyGray',
-    available: false,
+    label: 'Niezbędnik gracza',
+    description: 'Najwaniejsze informacje o grze',
+    color: 'etherealBlue',
+    available: true,
+    href: 'https://drive.google.com/drive/folders/1gF0IZRWJGBAAbzd-VijobUkT8CwRSu40',
   },
   {
     icon: IconUsers,
     label: 'Formularz zgłoszeniowy i wakaty',
-    description: 'wiosna 2026',
+    description: 'I tura zgłoszeń się zakończyła',
     color: 'mistyGray',
     available: false,
   },
@@ -387,7 +388,7 @@ export function GGPage() {
                           <Text size="lg" fw={600} c={link.available ? 'etherealBlue.9' : 'gray.8'}>
                             {link.label}
                           </Text>
-                          {!link.available && link.description && (
+                          {link.description && (
                             <Badge
                               size="md"
                               variant="filled"

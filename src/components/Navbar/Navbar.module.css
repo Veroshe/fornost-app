@@ -16,20 +16,6 @@
   width: 6rem;
 }
 
-.logo {
-  color: white;
-  letter-spacing: 2px;
-  font-family: Aniron, Georgia, 'Times New Roman', serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.logo:hover {
-  transform: scale(1.05);
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
 .link {
   display: block;
   line-height: 1;
@@ -81,10 +67,6 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 0.5rem 0;
-  }
-
   .logoImage {
     width: 5rem;
   }
@@ -93,4 +75,3 @@
     width: 4rem;
   }
 }
-

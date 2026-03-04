@@ -3,9 +3,15 @@ import { Box, Button, Container, Stack, Text, Title } from '@mantine/core';
 import bannerImage from '@/assets/banner-poziomy-2026.jpg';
 import { PiknikGallery } from '@/components/PiknikGallery';
 import { PrzeprawaGallery } from '@/components/PrzeprawaGallery';
+import { event } from '@/utils/analytics';
 
 export function GalleryPage() {
   const [selectedGallery, setSelectedGallery] = useState<string | null>(null);
+
+  const handleGallerySelect = (galleryName: string) => {
+    setSelectedGallery(galleryName);
+    event('gallery_view', 'engagement', `Gallery: ${galleryName}`);
+  };
 
   return (
     <Stack gap={0}>
@@ -89,7 +95,7 @@ export function GalleryPage() {
               <Button
                 size="lg"
                 color="etherealBlue"
-                onClick={() => setSelectedGallery('przeprawa')}
+                onClick={() => handleGallerySelect('przeprawa')}
                 style={{
                   minWidth: 'clamp(250px, 60vw, 300px)',
                   width: '100%',
@@ -103,7 +109,7 @@ export function GalleryPage() {
               <Button
                 size="lg"
                 color="forestGreen"
-                onClick={() => setSelectedGallery('piknik')}
+                onClick={() => handleGallerySelect('piknik')}
                 style={{
                   minWidth: 'clamp(250px, 60vw, 300px)',
                   width: '100%',

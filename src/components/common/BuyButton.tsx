@@ -1,8 +1,13 @@
 import { IconTicket } from '@tabler/icons-react';
 import { Button } from '@mantine/core';
 import { TICKET_FORM_URL } from '@/edition_constants';
+import { event } from '@/utils/analytics';
 
 export const BuyButton = () => {
+  const handleBuyTicketClick = () => {
+    event('buy_ticket', 'conversion', 'Buy Ticket Button');
+  };
+
   return (
     <Button
       size="lg"
@@ -13,6 +18,7 @@ export const BuyButton = () => {
       target="_blank"
       rel="noreferrer"
       leftSection={<IconTicket size={20} />}
+      onClick={handleBuyTicketClick}
       style={{
         minWidth: 'clamp(160px, 40vw, 200px)',
         fontSize: 'clamp(0.875rem, 2vw, 1rem)',

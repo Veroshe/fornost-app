@@ -31,56 +31,54 @@ export function Navbar() {
   ));
 
   return (
-    <div className={`${classes.header} ${isScrolled ? classes.scrolled : ''}`}>
-      <Container size="xl" className={classes.inner}>
-        <Box visibleFrom="sm">
-          <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-            <img
-              src={logoImage}
-              alt="Fornost - Konwent Larpowy"
-              className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
-              style={{ display: 'block' }}
-            />
-          </Link>
-        </Box>
+    <Container size="xl" className={classes.inner}>
+      <Box visibleFrom="sm">
+        <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+          <img
+            src={logoImage}
+            alt="Fornost - Konwent Larpowy"
+            className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
+            style={{ display: 'block' }}
+          />
+        </Link>
+      </Box>
 
-        <Group gap={5} visibleFrom="sm">
-          {items}
-        </Group>
+      <Group gap={5} visibleFrom="sm">
+        {items}
+      </Group>
 
-        <Group gap={5} visibleFrom="sm">
-          <BuyButton />
-        </Group>
+      <Group gap={5} visibleFrom="sm">
+        <BuyButton />
+      </Group>
 
-        {/* Mobile */}
-        <Group hiddenFrom="sm" style={{ flex: 1 }} justify="space-between">
-          <Link to="/">
-            <img
-              src={logoImage}
-              alt="Fornost - Konwent Larpowy"
-              className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
-            />
-          </Link>
+      {/* Mobile */}
+      <Group hiddenFrom="sm" style={{ flex: 1 }} justify="space-between">
+        <Link to="/">
+          <img
+            src={logoImage}
+            alt="Fornost - Konwent Larpowy"
+            className={`${classes.logoImage} ${isScrolled ? classes.logoScrolled : ''}`}
+          />
+        </Link>
 
-          <Menu shadow="md" width={200} opened={opened} onChange={toggle}>
-            <Menu.Target>
-              <Burger opened={opened} onClick={toggle} size="sm" color="white" />
-            </Menu.Target>
+        <Menu shadow="md" width={200} opened={opened} onChange={toggle}>
+          <Menu.Target>
+            <Burger opened={opened} onClick={toggle} size="sm" color="white" />
+          </Menu.Target>
 
-            <Menu.Dropdown>
-              {links.map((link) => (
-                <Menu.Item key={link.label} component={Link} to={link.link}>
-                  {link.label}
-                </Menu.Item>
-              ))}
-              <Menu.Divider />
-              <Menu.Item>
-                <BuyButton />
+          <Menu.Dropdown>
+            {links.map((link) => (
+              <Menu.Item key={link.label} component={Link} to={link.link}>
+                {link.label}
               </Menu.Item>
-            </Menu.Dropdown>
-          </Menu>
-        </Group>
-      </Container>
-    </div>
+            ))}
+            <Menu.Divider />
+            <Menu.Item>
+              <BuyButton />
+            </Menu.Item>
+          </Menu.Dropdown>
+        </Menu>
+      </Group>
+    </Container>
   );
 }

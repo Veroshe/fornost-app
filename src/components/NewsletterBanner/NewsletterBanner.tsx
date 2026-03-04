@@ -2,9 +2,14 @@ import { IconMail } from '@tabler/icons-react';
 import { Box, Button, Container, Stack, Text, Title } from '@mantine/core';
 import backgroundImage from '@/assets/przepr/przepr_krolow_d1_-9.jpg';
 import { NEWSLETTER_URL } from '@/edition_constants';
+import { event } from '@/utils/analytics';
 import classes from './NewsletterBanner.module.css';
 
 export function NewsletterBanner() {
+  const handleNewsletterClick = () => {
+    event('newsletter_signup', 'engagement', 'Newsletter Banner');
+  };
+
   return (
     <Box
       component="section"
@@ -36,6 +41,7 @@ export function NewsletterBanner() {
             rel="noreferrer"
             leftSection={<IconMail size={20} />}
             className={classes.button}
+            onClick={handleNewsletterClick}
           >
             Zapisz się do newslettera
           </Button>

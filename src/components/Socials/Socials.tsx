@@ -2,6 +2,7 @@ import { IconBrandDiscord, IconBrandFacebook, IconBrandInstagram } from '@tabler
 import { Box, Card, Container, Grid, Text, Title } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { DISCORD_URL, FACEBOOK_URL, INSTAGRAM_URL } from '@/edition_constants';
+import { event } from '@/utils/analytics';
 import classes from './Socials.module.css';
 
 const socialItems = [
@@ -29,6 +30,10 @@ const socialItems = [
 export function Socials() {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
+  const handleSocialClick = (platform: string) => {
+    event('social_click', 'engagement', `Social: ${platform}`);
+  };
+
   return (
     <Box component="section" py={{ base: 'sm', md: 80 }}>
       <Container size="xl">
@@ -41,6 +46,7 @@ export function Socials() {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => handleSocialClick(item.title)}
               >
                 <div className={classes.iconWrapper}>
                   <item.icon size={isMobile ? 40 : 48} stroke={1.5} />

@@ -92,7 +92,7 @@ export const theme = createTheme({
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
   fontFamilyMonospace: 'ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, monospace',
   headings: {
-    fontFamily: 'Aniron, "Palatino Linotype", Palatino, Georgia, serif',
+    fontFamily: 'Cinzel, "Palatino Linotype", Palatino, Georgia, serif',
     fontWeight: '400',
     sizes: {
       h1: { fontSize: '1.5rem', lineHeight: '1.3', fontWeight: '400' },
@@ -129,32 +129,15 @@ export const theme = createTheme({
   // Komponenty - dostosowanie do estetyki fantasy
   components: {
     Title: {
-      styles: (_theme: unknown, params: { order?: number }) => ({
+      styles: () => ({
         root: {
-          fontFamily:
-            params.order && params.order > 1
-              ? 'Cinzel, "Palatino Linotype", Palatino, Georgia, serif'
-              : 'Aniron, "Palatino Linotype", Palatino, Georgia, serif',
+          fontFamily: 'Cinzel, "Palatino Linotype", Palatino, Georgia, serif',
         },
       }),
     },
     Container: {
       defaultProps: {
         size: 'xl',
-      },
-      styles: {
-        root: {
-          paddingLeft: 'var(--mantine-spacing-md)',
-          paddingRight: 'var(--mantine-spacing-md)',
-          '@media (min-width: 768px)': {
-            paddingLeft: 'var(--mantine-spacing-lg)',
-            paddingRight: 'var(--mantine-spacing-lg)',
-          },
-          '@media (min-width: 1024px)': {
-            paddingLeft: 'var(--mantine-spacing-xl)',
-            paddingRight: 'var(--mantine-spacing-xl)',
-          },
-        },
       },
     },
     Paper: {
@@ -196,15 +179,8 @@ export const theme = createTheme({
           fontWeight: 500,
           letterSpacing: '0.5px',
           transition: 'all 0.2s ease',
-          border: '1px solid transparent',
           '&:hover': {
             transform: 'translateY(-2px)',
-          },
-          '&[data-disabled]': {
-            pointerEvents: 'none',
-          },
-          '&[data-loading]': {
-            pointerEvents: 'none',
           },
         },
       },

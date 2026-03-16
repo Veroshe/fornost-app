@@ -1,0 +1,268 @@
+{
+  "Ognisko - Otwarcie konwentu": {
+    "title": "Ognisko - Otwarcie konwentu",
+    "description": "Uroczyste otwarcie konwentu Fornost 2026. Wspólne ognisko, przedstawienie organizacji, garść najważniejszych informacji oraz - start Turnieju Strażników.",
+    "location": null,
+    "organizer": "Organizatorzy Fornostu",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "LARP A gdy w chochliku wampir się zakocha...": {
+    "title": "A gdy w chochliku wampir się zakocha...",
+    "description": "Larp o wampirzym weselu - komediowa forma i AM cooking.",
+    "organizer": "Zosia Piotrowska",
+    "maxParticipants": 15,
+    "signupLink": null,
+    "detailsLink": null,
+    "location": null,
+    "type": "larp"
+  },
+  "Warsztaty Juggera": {
+    "title": "Warsztaty Juggera",
+    "description": "Trenig Juggera, wprowadzenie do zasad, sparingi, gra.",
+    "location": null,
+    "organizer": "Piotr Stróżyk 'Simba'",
+    "maxParticipants": "cały Fornost",
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Awantura o złoto": {
+    "title": "Awantura o złoto",
+    "description": "Konkurs oparty o teleturniej Awantura o Kasę. Uczestnicy odpowiadają drużynowo na pytania z zakresu wiedzy o Śródziemiu, wiedźmińskiego Kontynentu oraz innych krain*, a prawo odpowiedzi uzyskują w licytacji z innymi drużynami. \n\n *Autor zastrzega sobie prawo do zatajenia konkretnych kategorii, ale nie będą one wulgarne ani obraźliwe.",
+    "location": null,
+    "organizer": "Marek Hückmann",
+    "maxParticipants": 30,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "LARP W drodze do Craigh na Dun": {
+    "title": "W drodze do Craigh na Dun",
+    "description": "Mały chamber osadzony w świecie serialowego Outlandera. Gra opowiada o miłości, obowiązku, trudnych i przykrych decyzjach oraz rozstaniach.",
+    "location": null,
+    "organizer": "Michał 'Poręcki' Poręcki",
+    "maxParticipants": 8,
+    "signupLink": null,
+    "detailsLink": null,
+    "type": "larp"
+  },
+  "LARP Polowanie na Gregora Clegane'a": {
+    "title": "Polowanie na Gregora Clegane'a",
+    "description": "Larp przygodowy osadzony w świecie Georga R.R. Martina.",
+    "location": null,
+    "organizer": "Michał Bąk 'Nowy'",
+    "maxParticipants": 30,
+    "signupLink": null,
+    "detailsLink": null,
+    "type": "larp"
+  },
+  "LARP Czy Aniołowie piją whisky?": {
+    "title": "Czy aniołowie piją whisky?",
+    "description": "Chamber larp dziejący się we współczesnym barze. Historia mocna, triggerogenna skupiona na uczuciu żalu za grzechy.",
+    "location": null,
+    "organizer": "Michał 'Poręcki' Poręcki",
+    "maxParticipants": 11,
+    "signupLink": null,
+    "detailsLink": null,
+    "type": "larp"
+  },
+  "Prelekcja i konkurs Tolkienowski": {
+    "title": "Prelekcja i konkurs Tolkienowski",
+    "description": "Sprawdź swoją wiedzę o świecie Śródziemia! Prelekcja o twórczości Tolkiena oraz konkurs dla prawdziwych znawców.",
+    "location": null,
+    "organizer": "Łukasz 'Leszli' Szeląg, Bartek 'Artysta' Brózda",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Chlarp": {
+    "title": "Chlarp",
+    "description": "ChLARP. I wszystko jasne.",
+    "location": null,
+    "organizer": "Maciej 'Ari' Onasz",
+    "maxParticipants": 30,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Ognisko": {
+    "title": "Ognisko",
+    "description": "Wspólne ognisko - integracja, piosenki przy gitarze i rozmowy do białego rana. Podsumowanie dnia na konwencie i ważne ogłoszenia na kolejny dzień!",
+    "location": null,
+    "organizer": null,
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Wiedzówka z Martina": {
+    "title": "Wiedzówka z G.R.R. Martina",
+    "description": "Wiedzówka z książek George'a R.R. Martina.",
+    "location": null,
+    "organizer": "Łukasz 'Leszli' Szeląg, Michał 'Nowy' Bąk",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "LARP Piwnice i Jaszczurki": {
+    "title": "Piwnice i Jaszczurki",
+    "description": "Larp w wiosce, w klimatach RPG z DnD. Fantasy. Larp w 3 aktach. \n Gracze wcielają w mieszkańców wioski, do której przybywają bohaterowie kampanii DnD, którzy na zawsze zmieniają życie mieszkańców. Gdzie całości strzeże Mistrz Podziemi, który jest typowym mistrzem... \n Mechanika luźno wzorowana na DnD. Dużo humoru sesji rpg. Będą rzuty kostkami.",
+    "location": null,
+    "organizer": "Filip Klich 'Hagrid'",
+    "maxParticipants": 16,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Dawne Pieśni": {
+    "title": "Dawne Pieśni",
+    "description": "Na tych warsztatach będę uczyć uczestników pieśni ludowych - mniej lub bardziej znanych, polskich i zagranicznych - trochę będzie też opowiadania o technice i historii.",
+    "location": null,
+    "organizer": "Igriana Bartoszek",
+    "maxParticipants": 25,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Avatar: Rozdroża": {
+    "title": "Avatar: Rozdroża",
+    "description": "Larp inspirowany światem seriali animowanych Awatar: Legenda Aanga i Awatar: Legenda Korry. \n Podobnie jak materiał źródłowy nasza gra opowiada o chęci utrzymania balansu - pomiędzy kwestiami politycznymi i duchowymi, w życiu prywatnym i rodzinnym, w swoich narodach oraz ogólnie na świecie. ",
+    "location": null,
+    "organizer": "Weronika 'Wero' Kalinowska , Mikołaj 'Iron' Adamczyk ",
+    "maxParticipants": 30,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Warsztaty Piekarnicze": {
+    "title": "Warsztaty Piekarnicze",
+    "description": "Warsztaty piekarnicze o wypiekach na zakwasie: część teoretyczna i praktyczna, z naciskiem na tworzenie własnych wypieków.",
+    "location": null,
+    "organizer": "Mikita 'Miki' Yakimovich",
+    "maxParticipants": 15,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Wiedzówka z Wiedźmina": {
+    "title": "Wiedzówka z Wiedźmina",
+    "description": "Wiedzówka z Wiedźmina: głównie książki, ale także polski serial i gry.",
+    "location": null,
+    "organizer": "Łukasz 'Leszli' Szeląg, Bartek 'Artysta' Brózda",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "LARP Elegia nocy letniej": {
+    "title": "Elegia nocy letniej",
+    "description": "Larp o spotkaniu światów ludzi i fae. Gra głównie odbywa się w dwóch pomieszczeniach; przez większość czasu fae i ludzie grają osobno, ale ich światy mogą na siebie oddziaływać.  \n Jedną część stanowi baśniowy, oniryczny, umierający świat fae a drugą bardziej pragmatyczny, przyziemny świat ludzi w realiach inspirowanych latami 20. XX wieku (w alternatywnym świecie, bez konkretów historycznych), w którym ważną rolę pełnią zmiany technologiczne, obyczajowe, stereotypy, szkiełko vs serce, traumy powojenne. \nŚwiaty te zawsze się przenikały, nadszedł jednak moment, w którym granica jest szczególnie cienka, a fae będą musiały podjąć decyzje, które mogą zmienić wszystko.",
+    "location": null,
+    "organizer": "Ada Krańska, Karolina Kuflińska",
+    "maxParticipants": 16,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Szykowanie lokacji pod GG": {
+    "title": "Szykowanie lokacji pod Grę Główną",
+    "description": "Pomóż w przygotowaniu lokacji do Gry Głównej. Razem tworzymy świat Za Garść Mithrilu!",
+    "location": null,
+    "organizer": "Ekipa GG",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Turniej Juggera": {
+    "title": "Turniej Juggera",
+    "description": "Rozgrywki w Juggera - dynamiczna gra zespołowa łącząca elementy sportów walki i strategii. Turniej z zakładami.",
+    "location": null,
+    "organizer": "Piotr 'Simba' Stróżyk ",
+    "maxParticipants": 30,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Turniej Strażników": {
+    "title": "Turniej Strażników",
+    "description": "Gra integracyjna dla wszystkich uczestników konwentu. Start - ognisko rozpoczęcia, zakończenie - ognisko zakończenia. Więcej informacji wkrótce.",
+    "location": null,
+    "organizer": "Jakub 'Gandi' Wasielak",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Warsztaty kuglarskie": {
+    "title": "Warsztaty kuglarskie",
+    "description": "Atrakcja dziejąca się przez cały konwent. Można dołączać i ćwiczyć w różnych momentach trwania wydarzenia.",
+    "location": null,
+    "organizer": "Mikołaj 'Ojo' Para",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Fornowizja": {
+    "title": "Fornowizja 2026",
+    "description": "Druga edycja Fornowizji: otwarte zapisy przez cały konwent, interakcja z publicznością i głosowanie przy ognisku.",
+    "location": null,
+    "organizer": "Zbigniew Andrzejewski, Jakub 'Gandi' Wasielak",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Podstawy gry aktorskiej": {
+    "title": "Podstawy gry aktorskiej",
+    "description": "Aktorskie podstawy, które mają na celu pomóc szczególnie nowym graczom wejść w postać przed Grą Główną.",
+    "location": null,
+    "organizer": "Igriana Bartoszek",
+    "maxParticipants": "ile przyjdzie",
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Warsztaty mechaniczne GG": {
+    "title": "Warsztaty mechaniczne Gry Głównej",
+    "description": "Poznaj mechaniki i zasady Gry Głównej 'Za Garść Mithrilu'. Obowiązkowe dla uczestników GG!",
+    "location": null,
+    "organizer": "Ekipa GG",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Gra Główna - Za Garść Mithrilu": {
+    "title": "Gra Główna - Za Garść Mithrilu",
+    "description": "Główny larp konwentu!",
+    "location": null,
+    "organizer": "Ekipa GG",
+    "maxParticipants": 100,
+    "signupLink": null,
+    "detailsLink": "https://drive.google.com/drive/folders/1gF0IZRWJGBAAbzd-VijobUkT8CwRSu40",
+    "type": "gg"
+  },
+  "Sprzątanie lokacji GG": {
+    "title": "Sprzątanie lokacji Gry Głównej",
+    "description": "Wspólne sprzątanie terenu po Grze Głównej. Razem zostawiamy miejsce czyste!",
+    "location": null,
+    "organizer": "Wszyscy uczestnicy",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Disco Platinium": {
+    "title": "Disco Platinium",
+    "description": "DJ-impreza pod namiotem podzielona na dwa sety.",
+    "location": null,
+    "organizer": "Kateryna Ziabliuk, Achos, Michał Skałka (Mike Stone)",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Ognisko i zakończenie konwentu": {
+    "title": "Ognisko i zakończenie konwentu",
+    "description": "Uroczyste zakończenie konwentu Fornost 2026. Wspólne ognisko, podsumowanie i pożegnanie do następnego roku!",
+    "location": null,
+    "organizer": "Organizatorzy Fornostu",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Kaligrafia – pismo elfickie": {
+    "title": "Kaligrafia – pismo elfickie",
+    "description": "Jestem rekonstruktorem średniowiecza i początkującym kaligrafem. Chciałbym nauczyć chętnych pisania tolkienowskim tengwarem przy użyciu atramentu i pióra o szerokiej stalówce. Pismo to jest proste, wymaga głównie nauczenia się posługiwania piórem. Nie, nie nauczę pisać inskrypcji z Jedynego Pierścienia, bo ta zapisana została ostrą stalówką, ale uczestnicy będą mogli odtworzyć jej tekst w bardziej 'oficjalnie' wyglądającym kroju pisma, którego nauczę. Przy okazji będą mogli poznać uncjałę, którą wykorzystywały filmy Petera Jacksona.",
+    "location": null,
+    "organizer": "Michał 'Jaskier' Sojka",
+    "maxParticipants": 6,
+    "signupLink": null,
+    "detailsLink": null
+  }
+}

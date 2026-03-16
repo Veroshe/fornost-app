@@ -29,6 +29,7 @@ const socialLinks = [
 ];
 
 const navLinks = [
+  { link: '/program', label: 'Program' },
   { link: '/gallery', label: 'Galeria' },
   { link: '/place', label: 'Na miejscu' },
   { link: '/organization', label: 'Organizacja' },

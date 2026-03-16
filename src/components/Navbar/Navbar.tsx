@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Box, Burger, Button, Container, Group, Menu } from '@mantine/core';
+import { Box, Burger, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import logoImage from '../../assets/logo-white.png';
 import { BuyButton } from '../common/BuyButton';
@@ -10,6 +10,7 @@ const links = [
   { link: '/place', label: 'Na miejscu' },
   { link: '/organization', label: 'Organizacja' },
   { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
+  // { link: '/program', label: 'Program' },
 ];
 
 export function Navbar() {

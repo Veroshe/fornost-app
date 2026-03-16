@@ -6,6 +6,7 @@ import { GGPage } from './pages/GG.page';
 import { HomePage } from './pages/Home.page';
 import { OrganizationPage } from './pages/Organization.page';
 import { PlacePage } from './pages/Place.page';
+import { ProgramPage } from './pages/Program.page';
 import { pageview } from './utils/analytics';
 
 function AnalyticsWrapper({ children }: { children: React.ReactNode }) {
@@ -65,6 +66,16 @@ const router = createHashRouter([
       <AnalyticsWrapper>
         <Layout>
           <GGPage />
+        </Layout>
+      </AnalyticsWrapper>
+    ),
+  },
+  {
+    path: 'program',
+    element: (
+      <AnalyticsWrapper>
+        <Layout>
+          <ProgramPage />
         </Layout>
       </AnalyticsWrapper>
     ),

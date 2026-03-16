@@ -1,0 +1,318 @@
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(45, 77, 102, 0.12);
+}
+
+.scrollIndicator {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 60px;
+  background: linear-gradient(to left, rgba(248, 249, 250, 0.95), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  pointer-events: none;
+  z-index: 2;
+  color: rgba(81, 127, 168, 0.5);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .scrollIndicator {
+    width: 40px;
+    padding-right: 5px;
+  }
+
+  .scrollIndicator svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.scheduleTable {
+  background: rgba(248, 249, 250, 0.85);
+  border: 1px solid rgba(148, 180, 209, 0.25);
+  min-width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.scheduleTable :global(thead) {
+  background: linear-gradient(135deg, rgba(81, 127, 168, 0.2) 0%, rgba(114, 150, 131, 0.2) 100%);
+}
+
+.timeHeader {
+  background: #b7c4cc !important;
+  color: black !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  font-size: 0.95rem !important;
+  padding: 1rem 0.75rem !important;
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  min-width: 80px;
+  border-left: 1px solid rgba(0, 0, 0, 0.6) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.dayHeader {
+  background: rgba(81, 127, 168, 0.15) !important;
+  color: black !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  font-size: 0.85rem !important;
+  padding: 0.75rem 0.5rem !important;
+  min-width: 200px;
+  line-height: 1.3;
+  border-left: 1px solid rgba(0, 0, 0, 0.6) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Bordery dla nagłówków torów będą dziedziczone z dayStartCell i dayEndCell */
+
+.scheduleTable :global(tbody td) {
+  min-width: 100px;
+}
+
+/* Szare linie domyślnie dla wszystkich komórek */
+.scheduleTable :global(td),
+.scheduleTable :global(th) {
+  border: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+/* Czarna linia po lewej stronie każdego dnia (początek dnia) */
+.dayStartCell {
+  border-left: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Czarna linia po prawej stronie każdego dnia (koniec dnia) */
+.dayEndCell {
+  border-right: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Środkowa kolumna w dniu z wieloma torami - lżejsze bordery po bokach */
+.middleTrackCell {
+  border-left: 1px solid rgba(128, 128, 128, 0.3) !important;
+  border-right: 1px solid rgba(128, 128, 128, 0.3) !important;
+}
+
+.timeCell {
+  border-right: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.timeCell {
+  background: #b7c4cc !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  color: black !important;
+  font-size: 0.85rem !important;
+  padding: 0.75rem 0.5rem !important;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  border-left: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.ogniskoCell {
+  background: rgba(178, 108, 85, 0.28) !important;
+  padding: 1rem 0.5rem !important;
+  vertical-align: middle !important;
+}
+
+.larpCell {
+  background: rgba(100, 130, 165, 0.28) !important;
+  padding: 1rem 0.5rem !important;
+  vertical-align: middle !important;
+}
+
+.warsztatCell {
+  background: rgba(105, 145, 125, 0.28) !important;
+  padding: 1rem 0.5rem !important;
+  vertical-align: middle !important;
+}
+
+.konkursCell {
+  background: rgba(180, 150, 90, 0.28) !important;
+  padding: 1rem 0.5rem !important;
+  vertical-align: middle !important;
+}
+
+.eventContent {
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3;
+  padding: 0.25rem;
+}
+
+.clickableCell {
+  transition: all 0.2s ease-in-out;
+}
+
+.clickableCell:hover {
+  box-shadow: 0 4px 12px rgba(35, 36, 36, 0.65);
+  z-index: 2;
+}
+
+.clickableCell:active {
+  transform: scale(0.98);
+}
+
+.highlightedCell {
+  box-shadow: 0 4px 12px rgba(35, 36, 36, 0.65);
+  z-index: 2;
+}
+
+.legend {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(81, 127, 168, 0.08) 0%, rgba(114, 150, 131, 0.08) 100%);
+  border: 1px solid rgba(148, 180, 209, 0.2);
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.legendItem:hover {
+  background: rgba(81, 127, 168, 0.1);
+  transform: translateY(-2px);
+}
+
+.legendItem:active {
+  transform: scale(0.98);
+}
+
+.legendIconOgnisko {
+  color: rgba(185, 65, 45, 1);
+}
+
+.legendIconLarp {
+  color: rgba(81, 127, 168, 1);
+}
+
+.legendIconWarsztat {
+  color: rgba(114, 150, 131, 1);
+}
+
+.legendIconKonkurs {
+  color: rgba(200, 160, 70, 1);
+}
+
+.alwaysOnPanel {
+  width: fit-content;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 180, 209, 0.25);
+  background: linear-gradient(135deg, rgba(81, 127, 168, 0.08) 0%, rgba(114, 150, 131, 0.08) 100%);
+  box-shadow: 0 4px 16px rgba(45, 77, 102, 0.12);
+}
+
+.alwaysOnButton {
+  justify-content: flex-start;
+  text-align: left;
+  white-space: normal;
+  height: auto;
+  padding: 0.6rem 0.75rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .alwaysOnPanel {
+    width: 100%;
+  }
+
+  .tableWrapper {
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+
+  .timeHeader,
+  .dayHeader {
+    font-size: 0.7rem !important;
+    padding: 0.5rem 0.25rem !important;
+  }
+
+  .trackHeader {
+    font-size: 0.65rem !important;
+    padding: 0.35rem 0.15rem !important;
+  }
+
+  .dayHeader {
+    min-width: 150px;
+  }
+
+  .scheduleTable :global(tbody td) {
+    min-width: 75px;
+  }
+
+  .timeCell {
+    font-size: 0.7rem !important;
+    padding: 0.5rem 0.25rem !important;
+    min-width: 60px;
+  }
+
+  .eventContent {
+    font-size: 0.65rem;
+    padding: 0.25rem;
+  }
+
+  .ogniskoCell,
+  .larpCell,
+  .warsztatCell,
+  .konkursCell {
+    padding: 0.5rem 0.25rem !important;
+  }
+
+  .legend {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+}
+
+/* Bardzo małe ekrany */
+@media (max-width: 480px) {
+  .timeHeader {
+    font-size: 0.65rem !important;
+    min-width: 50px;
+  }
+
+  .dayHeader {
+    font-size: 0.6rem !important;
+    min-width: 120px;
+  }
+
+  .trackHeader {
+    font-size: 0.55rem !important;
+    padding: 0.25rem 0.1rem !important;
+  }
+
+  .scheduleTable :global(tbody td) {
+    min-width: 60px;
+  }
+
+  .eventContent {
+    font-size: 0.6rem;
+  }
+}

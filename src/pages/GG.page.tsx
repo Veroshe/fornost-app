@@ -110,9 +110,9 @@ const linksData = [
   {
     icon: IconUsers,
     label: 'Formularz zgłoszeniowy i wakaty',
-    description: 'I tura zgłoszeń się zakończyła',
-    color: 'mistyGray',
-    available: false,
+    color: 'etherealBlue',
+    available: true,
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSeAmBHaFOUIBHWrgmsDBuDtBgwfS-JEM0lYsS6bJsv9ROfCXg/viewform',
   },
 ];
 

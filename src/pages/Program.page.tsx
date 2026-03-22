@@ -29,12 +29,12 @@ type EventType = 'ognisko' | 'larp' | 'warsztat' | 'konkurs' | '';
 interface EventDetails {
   title: string;
   description: string;
-  location: string;
-  organizer: string;
-  maxParticipants: number | null;
+  location: string | null;
+  organizer: string | null;
+  maxParticipants: number | string | null;
   detailsLink: string | null;
   signupLink: string | null;
-  type: string | null;
+  type?: string | null;
 }
 
 type EventDetailsMap = Record<string, EventDetails>;
@@ -53,13 +53,12 @@ const getEventType = (eventName: string): EventType => {
 
   // Sprawdź warsztaty PRZED larpami (żeby "jugger" nie było rozpoznane jako "gg")
   if (
-    firstLine.includes('warsztat') ||
-    firstLine.includes('jugger') ||
+    firstLine.includes('warsztaty') ||
     firstLine.includes('szykowanie') ||
     firstLine.includes('dawne') ||
     firstLine.includes('podstawy') ||
     firstLine.includes('mechaniczne') ||
-    firstLine.includes('piekarnicze') ||
+    firstLine.includes('piekarniczy') ||
     firstLine.includes('kaligrafia') ||
     firstLine.includes('disco')
   ) {
@@ -89,7 +88,8 @@ const getEventType = (eventName: string): EventType => {
     firstLine.includes('wiedzówka') ||
     firstLine.includes('czy') ||
     firstLine.includes('awantura') ||
-    firstLine.includes('fornowizja')
+    firstLine.includes('fornowizja') ||
+    firstLine.includes('turniej')
   ) {
     return 'konkurs';
   }
@@ -169,8 +169,8 @@ const rawScheduleData = [
       ['', ''],
       ['', ''],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['', ''],
-      ['Avatar: Rozdroża', 'Warsztaty Piekarnicze'],
+      ['Avatar: Rozdroża', ''],
+      ['', ' Od mąki do chleba – warsztat piekarniczy'],
       ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
@@ -182,8 +182,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['', ''],
-      ['Avatar: Rozdroża', 'Warsztaty Piekarnicze'],
+      ['Avatar: Rozdroża', ''],
+      ['', ' Od mąki do chleba – warsztat piekarniczy'],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -195,8 +195,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Turniej Juggera', ''],
-      ['Avatar: Rozdroża', 'Warsztaty Piekarnicze'],
+      ['Avatar: Rozdroża', ''],
+      ['Turniej Juggera', ' Od mąki do chleba – warsztat piekarniczy'],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -208,8 +208,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Turniej Juggera', ''],
-      ['Avatar: Rozdroża', 'Wiedzówka z Wiedźmina'],
+      ['Avatar: Rozdroża', ''],
+      ['Turniej Juggera', 'Konkurs wieśmakowy'],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -221,8 +221,8 @@ const rawScheduleData = [
       ['Ognisko - Otwarcie konwentu', ''],
       ['', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Turniej Juggera', ''],
-      ['Avatar: Rozdroża', 'Wiedzówka z Wiedźmina'],
+      ['Avatar: Rozdroża', ''],
+      ['Turniej Juggera', 'Konkurs wieśmakowy'],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -234,8 +234,8 @@ const rawScheduleData = [
       ['Ognisko - Otwarcie konwentu', ''],
       ['Ognisko', 'Chlarp'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['', ''],
       ['Avatar: Rozdroża', ''],
+      ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Ognisko i zakończenie konwentu', ''],
@@ -246,7 +246,7 @@ const rawScheduleData = [
     days: [
       ['Ognisko - Otwarcie konwentu', ''],
       ['Ognisko', 'Chlarp'],
-      ['Ognisko', 'Wiedzówka z Martina', ''],
+      ['Ognisko', 'Wiedzówka z G.R.R. Martina', ''],
       ['Ognisko', ''],
       ['Ognisko', 'Fornowizja'],
       ['Gra Główna - Za Garść Mithrilu', ''],
@@ -259,7 +259,7 @@ const rawScheduleData = [
     days: [
       ['Ognisko - Otwarcie konwentu', ''],
       ['Ognisko', 'Chlarp'],
-      ['Ognisko', 'Wiedzówka z Martina', ''],
+      ['Ognisko', 'Wiedzówka z G.R.R. Martina', ''],
       ['Ognisko', ''],
       ['Ognisko', 'Fornowizja'],
       ['Ognisko', 'Disco Platinium'],
@@ -368,7 +368,12 @@ const days = [
   'Sobota\n1.08',
 ];
 
-const alwaysOnAttractions = ['Turniej Strażników', 'Warsztaty kuglarskie'];
+const alwaysOnAttractions = [
+  'Turniej Strażników',
+  'Warsztaty kuglarskie',
+  'Warsztaty kaletnicze',
+  'Kółko chlebowe',
+];
 
 export function ProgramPage() {
   const [drawerOpened, setDrawerOpened] = useState(false);
@@ -380,8 +385,10 @@ export function ProgramPage() {
   const eventDetails = eventDetailsData as EventDetailsMap;
 
   const handleEventClick = (eventName: string) => {
-    if (eventName && eventDetails[eventName]) {
-      setSelectedEvent(eventDetails[eventName]);
+    const normalizedEventName = eventName.trim();
+
+    if (normalizedEventName && eventDetails[normalizedEventName]) {
+      setSelectedEvent(eventDetails[normalizedEventName]);
       setDrawerOpened(true);
     }
   };
@@ -519,13 +526,15 @@ export function ProgramPage() {
               </Stack>
 
               <Box className={classes.alwaysOnPanel}>
+                <Text fw={600} mb="sm">
+                  Przez cały konwent
+                </Text>
                 <Flex
                   gap="sm"
                   direction={{ base: 'column', md: 'row' }}
                   align="center"
                   justify="center"
                 >
-                  <Text fw={600}>Przez cały konwent</Text>
                   {alwaysOnAttractions.map((attraction) => (
                     <Button
                       key={attraction}
@@ -573,6 +582,7 @@ export function ProgramPage() {
                         <Table.Td className={classes.timeCell}>{row.time}</Table.Td>
                         {row.days.map((dayEvents, dayIndex) => {
                           const numCols = getColumnsForDay(dayIndex);
+                          const isSelectedEvent = selectedEvent?.title === dayEvents[0];
 
                           // Dla dni z jednym torem, scal wszystkie kolumny
                           if (singleTrackDays.includes(dayIndex)) {
@@ -591,7 +601,7 @@ export function ProgramPage() {
                             return (
                               <Table.Td
                                 key={`${dayIndex}-single`}
-                                className={`${cellClass} ${classes.dayStartCell} ${classes.dayEndCell} ${event ? classes.clickableCell : ''} ${isHighlighted ? classes.highlightedCell : ''}`}
+                                className={`${cellClass} ${classes.dayStartCell} ${classes.dayEndCell} ${event ? classes.clickableCell : ''} ${isHighlighted ? classes.highlightedCell : ''} ${isSelectedEvent ? classes.selectedEventCell : ''}`}
                                 rowSpan={span || 1}
                                 colSpan={numCols}
                                 onClick={() => event && handleEventClick(event)}

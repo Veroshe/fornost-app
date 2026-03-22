@@ -172,11 +172,13 @@
 
 .clickableCell:active {
   transform: scale(0.98);
+  border: 1.5px solid rgba(0, 0, 0, 0.7) !important;
 }
 
 .highlightedCell {
-  box-shadow: 0 4px 12px rgba(35, 36, 36, 0.65);
+  /* box-shadow: 0 4px 12px rgba(35, 36, 36, 0.65); */
   z-index: 2;
+  border: 1.5px solid rgba(0, 0, 0, 0.7) !important;
 }
 
 .legend {

@@ -93,7 +93,7 @@
     "signupLink": null,
     "detailsLink": null
   },
-  "Wiedzówka z Martina": {
+  "Wiedzówka z G.R.R. Martina": {
     "title": "Wiedzówka z G.R.R. Martina",
     "description": "Wiedzówka z książek George'a R.R. Martina.",
     "location": null,
@@ -129,8 +129,8 @@
     "signupLink": null,
     "detailsLink": null
   },
-  "Warsztaty Piekarnicze": {
-    "title": "Warsztaty Piekarnicze",
+  "Od mąki do chleba – warsztat piekarniczy": {
+    "title": "Od mąki do chleba – warsztat piekarniczy",
     "description": "Warsztaty piekarnicze o wypiekach na zakwasie: część teoretyczna i praktyczna, z naciskiem na tworzenie własnych wypieków.",
     "location": null,
     "organizer": "Mikita 'Miki' Yakimovich",
@@ -138,8 +138,8 @@
     "signupLink": null,
     "detailsLink": null
   },
-  "Wiedzówka z Wiedźmina": {
-    "title": "Wiedzówka z Wiedźmina",
+  "Konkurs wieśmakowy": {
+    "title": "Konkurs wieśmakowy",
     "description": "Wiedzówka z Wiedźmina: głównie książki, ale także polski serial i gry.",
     "location": null,
     "organizer": "Łukasz 'Leszli' Szeląg, Bartek 'Artysta' Brózda",
@@ -262,6 +262,24 @@
     "location": null,
     "organizer": "Michał 'Jaskier' Sojka",
     "maxParticipants": 6,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Kółko chlebowe": {
+    "title": "Kółko chlebowe",
+    "description": "Kółko chlebowe",
+    "location": null,
+    "organizer": "Mikita 'Miki' Yakimovich",
+    "maxParticipants": null,
+    "signupLink": null,
+    "detailsLink": null
+  },
+  "Warsztaty kaletnicze": {
+    "title": "Kółko chlebowe",
+    "description": "Warsztaty kaletnicze",
+    "location": null,
+    "organizer": "Pat & Wolfram",
+    "maxParticipants": null,
     "signupLink": null,
     "detailsLink": null
   }

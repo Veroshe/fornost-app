@@ -35,6 +35,7 @@ interface EventDetails {
   detailsLink: string | null;
   signupLink: string | null;
   type?: string | null;
+  zapisy: string | null;
 }
 
 type EventDetailsMap = Record<string, EventDetails>;
@@ -224,7 +225,7 @@ const rawScheduleData = [
       ['Avatar: Rozdroża', ''],
       ['Turniej Juggera', 'Konkurs wieśmakowy'],
       ['Gra Główna - Za Garść Mithrilu', ''],
-      ['Gra Główna - Za Garść Mithrilu', ''],
+      ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
       ['Sprzątanie lokacji GG', ''],
     ],
   },
@@ -237,7 +238,7 @@ const rawScheduleData = [
       ['Avatar: Rozdroża', ''],
       ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
-      ['Gra Główna - Za Garść Mithrilu', ''],
+      ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
       ['Ognisko i zakończenie konwentu', ''],
     ],
   },
@@ -296,7 +297,7 @@ const rawScheduleData = [
 ];
 
 // Dni z tylko jednym torem (bez równoległych wydarzeń)
-const singleTrackDays = [0, 6, 7]; // Sobota 25.07, Piątek 31.07, Sobota 1.08
+const singleTrackDays = [0, 7]; // Sobota 25.07, Piątek 31.07, Sobota 1.08
 // Dni z trzema torami
 const threeTrackDays = [2]; // Poniedziałek 27.07
 
@@ -706,6 +707,15 @@ export function ProgramPage() {
                   Maksymalna liczba uczestników
                 </Text>
                 <Text>{selectedEvent.maxParticipants}</Text>
+              </Box>
+            )}
+
+            {selectedEvent.zapisy && (
+              <Box>
+                <Text size="sm" fw={700} c="dimmed" mb={4}>
+                  Zapisy
+                </Text>
+                <Text>{selectedEvent.zapisy}</Text>
               </Box>
             )}
             {selectedEvent.type === 'larp' && (

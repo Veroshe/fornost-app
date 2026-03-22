@@ -29,13 +29,13 @@ type EventType = 'ognisko' | 'larp' | 'warsztat' | 'konkurs' | '';
 interface EventDetails {
   title: string;
   description: string;
-  location: string | null;
-  organizer: string | null;
-  maxParticipants: number | string | null;
-  detailsLink: string | null;
-  signupLink: string | null;
+  location?: string | null;
+  organizer?: string | null;
+  maxParticipants?: number | string | null;
+  detailsLink?: string | null;
+  signupLink?: string | null;
   type?: string | null;
-  zapisy: string | null;
+  zapisy?: string | null;
 }
 
 type EventDetailsMap = Record<string, EventDetails>;
@@ -121,8 +121,8 @@ const rawScheduleData = [
       ['LARP Piwnice i Jaszczurki', 'Dawne Pieśni'],
       ['LARP Elegia nocy letniej', 'Szykowanie lokacji pod GG'],
       ['Podstawy gry aktorskiej', ''],
-      ['', ''],
-      ['', ''],
+      ['Gra Główna - Za Garść Mithrilu', ''],
+      ['Gra Główna - Za Garść Mithrilu', ''],
     ],
   },
   {
@@ -170,8 +170,8 @@ const rawScheduleData = [
       ['', ''],
       ['', ''],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Avatar: Rozdroża', ''],
-      ['', ' Od mąki do chleba – warsztat piekarniczy'],
+      ['Avatar: Rozdroża', 'Od mąki do chleba – warsztat piekarniczy'],
+      ['', ''],
       ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
@@ -183,8 +183,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Avatar: Rozdroża', ''],
-      ['', ' Od mąki do chleba – warsztat piekarniczy'],
+      ['Avatar: Rozdroża', 'Od mąki do chleba – warsztat piekarniczy'],
+      ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -196,8 +196,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Avatar: Rozdroża', ''],
-      ['Turniej Juggera', ' Od mąki do chleba – warsztat piekarniczy'],
+      ['Avatar: Rozdroża', 'Od mąki do chleba – warsztat piekarniczy'],
+      ['Turniej Juggera', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -209,8 +209,8 @@ const rawScheduleData = [
       ['', ''],
       ['LARP A gdy w chochliku wampir się zakocha...', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Avatar: Rozdroża', ''],
-      ['Turniej Juggera', 'Konkurs wieśmakowy'],
+      ['Avatar: Rozdroża', 'Konkurs wieśmakowy'],
+      ['Turniej Juggera', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
@@ -222,8 +222,8 @@ const rawScheduleData = [
       ['Ognisko - Otwarcie konwentu', ''],
       ['', 'Prelekcja i konkurs Tolkienowski'],
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
-      ['Avatar: Rozdroża', ''],
-      ['Turniej Juggera', 'Konkurs wieśmakowy'],
+      ['Avatar: Rozdroża', 'Konkurs wieśmakowy'],
+      ['Turniej Juggera', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
       ['Sprzątanie lokacji GG', ''],

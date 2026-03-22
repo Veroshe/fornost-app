@@ -6,11 +6,11 @@ import { BuyButton } from '../common/BuyButton';
 import classes from './Navbar.module.css';
 
 const links = [
-  { link: '/gallery', label: 'Galeria' },
   { link: '/place', label: 'Na miejscu' },
+  { link: '/program', label: 'Program' },
+  { link: '/gallery', label: 'Galeria' },
   { link: '/organization', label: 'Organizacja' },
   { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
-  // { link: '/program', label: 'Program' },
 ];
 
 export function Navbar() {

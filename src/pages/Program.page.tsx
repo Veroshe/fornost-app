@@ -60,8 +60,8 @@ const getEventType = (eventName: string): EventType => {
     firstLine.includes('podstawy') ||
     firstLine.includes('mechaniczne') ||
     firstLine.includes('piekarniczy') ||
-    firstLine.includes('kaligrafia') ||
-    firstLine.includes('disco')
+    firstLine.includes('disco') ||
+    firstLine.includes('krafterski')
   ) {
     return 'warsztat';
   }
@@ -104,7 +104,7 @@ const rawScheduleData = [
     days: [
       ['', ''],
       ['LARP Czy Aniołowie piją whisky?', ''],
-      ['LARP W drodze do Craigh na Dun', '', ''],
+      ['LARP W drodze do Craigh na Dun', '', 'Krąg krafterski'],
       ['LARP Piwnice i Jaszczurki', 'Dawne Pieśni'],
       ['LARP Elegia nocy letniej', 'Szykowanie lokacji pod GG'],
       ['Podstawy gry aktorskiej', ''],
@@ -117,7 +117,7 @@ const rawScheduleData = [
     days: [
       ['', ''],
       ['LARP Czy Aniołowie piją whisky?', 'Warsztaty Juggera'],
-      ['LARP W drodze do Craigh na Dun', 'Warsztaty Juggera', 'Kaligrafia – pismo elfickie'],
+      ['LARP W drodze do Craigh na Dun', 'Warsztaty Juggera', 'Krąg krafterski'],
       ['LARP Piwnice i Jaszczurki', 'Dawne Pieśni'],
       ['LARP Elegia nocy letniej', 'Szykowanie lokacji pod GG'],
       ['Podstawy gry aktorskiej', ''],
@@ -130,7 +130,7 @@ const rawScheduleData = [
     days: [
       ['', ''],
       ['LARP Czy Aniołowie piją whisky?', 'Warsztaty Juggera'],
-      ['LARP W drodze do Craigh na Dun', 'Warsztaty Juggera', 'Kaligrafia – pismo elfickie'],
+      ['LARP W drodze do Craigh na Dun', 'Warsztaty Juggera', 'Krąg krafterski'],
       ['LARP Piwnice i Jaszczurki', 'Dawne Pieśni'],
       ['LARP Elegia nocy letniej', 'Szykowanie lokacji pod GG'],
       ['Warsztaty mechaniczne GG', ''],
@@ -143,7 +143,7 @@ const rawScheduleData = [
     days: [
       ['', ''],
       ['Awantura o złoto', ''],
-      ['', '', ''],
+      ['', '', 'Krąg krafterski'],
       ['LARP Piwnice i Jaszczurki', 'Dawne Pieśni'],
       ['LARP Elegia nocy letniej', 'Szykowanie lokacji pod GG'],
       ['Warsztaty mechaniczne GG', ''],

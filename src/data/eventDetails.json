@@ -262,12 +262,12 @@
     "signupLink": null,
     "detailsLink": null
   },
-  "Kaligrafia – pismo elfickie": {
-    "title": "Kaligrafia – pismo elfickie",
-    "description": "Jestem początkującym kaligrafem. Chciałbym nauczyć chętnych pisania tolkienowskim tengwarem przy użyciu atramentu i pióra o szerokiej stalówce. Pismo to jest proste, wymaga głównie nauczenia się posługiwania piórem. Nie, nie nauczę pisać inskrypcji z Jedynego Pierścienia, bo ta zapisana została ostrą stalówką, ale uczestnicy będą mogli odtworzyć jej tekst w bardziej 'oficjalnie' wyglądającym kroju pisma, którego nauczę. Przy okazji będą mogli poznać uncjałę, którą wykorzystywały filmy Petera Jacksona.",
+  "Krąg krafterski": {
+    "title": "Krąg krafterski",
+    "description": null,
     "location": null,
-    "organizer": "Michał 'Jaskier' Sojka",
-    "maxParticipants": 6,
+    "organizer": null,
+    "maxParticipants": null,
     "signupLink": null,
     "detailsLink": null
   },

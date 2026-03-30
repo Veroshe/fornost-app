@@ -9,18 +9,18 @@ import olca from './assets/org/olca.jpg';
 import orzech from './assets/org/orzech.jpg';
 import ozlo from './assets/org/ozlo.jpg';
 import ponczo from './assets/org/ponczo.jpg';
+import porecki from './assets/org/porecki.png';
+import saverok from './assets/org/saverok.jpg';
 import sharp from './assets/org/sharp.jpg';
 import tyna from './assets/org/tyna.jpg';
 import wero from './assets/org/wero.jpg';
-import saverok from './assets/org/saverok.jpg';
-import porecki from './assets/org/porecki.png';
 
 export const FACEBOOK_URL = 'https://www.facebook.com/events/741426278765069';
 export const INSTAGRAM_URL = 'https://www.instagram.com/konwent_fornost/';
 export const DISCORD_URL = 'https://discord.gg/uBxvT9rMGM';
 
 export const TICKET_FORM_URL = 'https://forms.gle/KQCgwXc6iCkGs6xu7';
-export const UBOJNIA_URL = 'https://www.facebook.com/profile.php?id=100063486788417';
+export const KARCZMA_URL = 'https://www.facebook.com/profile.php?id=61560263833757';
 export const PROGRAM_SUBMISSION_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScmwMNDNLM030eFltJXix-dTNooU5f0IoRgMbMT-_PACKFK-g/viewform';
 export const MACIEJ_MARGIELSKI_URL = 'https://www.instagram.com/mmargiel/';
@@ -133,8 +133,8 @@ export const ORGANIZACJA = [
     initials: 'MO',
     image: eldarion,
   },
-    {
-    name: "Michał Poręcki",
+  {
+    name: 'Michał Poręcki',
     role: 'MG Gry Głównej 2026',
     color: 'etherealBlue',
     initials: 'MO',

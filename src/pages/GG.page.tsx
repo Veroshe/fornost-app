@@ -29,7 +29,7 @@ import {
 } from '@mantine/core';
 import ggBackground from '@/assets/gg-tlo.jpg';
 import classes from '@/components/Info/Info.module.css';
-import { UBOJNIA_URL } from '@/edition_constants';
+import { KARCZMA_URL } from '@/edition_constants';
 
 const quickInfoItems = [
   {
@@ -63,13 +63,13 @@ const quickInfoItems = [
       <>
         W cenie, karczma in-game prowadzona przez{' '}
         <Anchor
-          href={UBOJNIA_URL}
+          href={KARCZMA_URL}
           target="_blank"
           rel="noopener noreferrer"
           c="etherealBlue.9"
           fw={600}
         >
-          Ubojnię - Kuchnię Chaosu
+          Karczmę Bienenwald
         </Anchor>
       </>
     ),

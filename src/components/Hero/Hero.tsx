@@ -34,11 +34,25 @@ export function Hero() {
 
             <Text className={classes.tagline}>
               Tygodniowy konwent fantasy w Czatachowej (Jura Krakowsko-Chęstochowska). Larpy,
-              warsztaty, konkursy i 2-dniowy LARP w świecie J.R.R. Tolkiena.
+              warsztaty, konkursy i 3-dniowy LARP w świecie J.R.R. Tolkiena.
             </Text>
 
             <Group className={classes.controls}>
               <BuyButton />
+              <Button
+                size="lg"
+                color="etherealBlue"
+                radius="md"
+                component="a"
+                href="/#/program"
+                style={{
+                  minWidth: 'clamp(160px, 40vw, 200px)',
+                  fontSize: 'clamp(0.875rem, 2vw, 1rem)',
+                  padding: 'clamp(0.625rem, 2vw, 0.875rem) clamp(1rem, 3vw, 1.375rem)',
+                }}
+              >
+                Program konwentu
+              </Button>
             </Group>
           </Stack>
           <Countdown />

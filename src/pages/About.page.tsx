@@ -37,7 +37,7 @@ import przepr3 from '@/assets/przepr/przepr3.jpg';
 import przepr4 from '@/assets/przepr/przepr4.jpg';
 import { BuyButton } from '@/components/common/BuyButton';
 import classes from '@/components/Info/Info.module.css';
-import { PROGRAM_SUBMISSION_URL, UBOJNIA_URL } from '@/edition_constants';
+import { KARCZMA_URL, PROGRAM_SUBMISSION_URL } from '@/edition_constants';
 
 export function AboutPage() {
   return (
@@ -62,7 +62,7 @@ export function AboutPage() {
                     Fornost to tygodniowy, terenowy konwent dla miłośników fantasy. Odbywa się w
                     miejscowości Czatachowa położnej na Jurze Krakowsko-Częstochowskiej. Program
                     imprezy pełny jest larpów, warsztatów i konkursów. Główną atrakcję stanowi
-                    2-dniowy LARP osadzony w świecie J.R.R. Tolkiena.
+                    3-dniowy LARP osadzony w świecie J.R.R. Tolkiena.
                   </Text>
 
                   <Stack gap="sm">
@@ -218,8 +218,8 @@ export function AboutPage() {
                         ciepłe i zimne napoje (zarówno alkoholowe, jak i bezalkoholowe) oraz
                         przekąski. <br /> W czasie LARPA 'Za Garść Mithrilu' uczestników żywić
                         będzie karczma in-game prowadzona przez{' '}
-                        <Anchor href={UBOJNIA_URL} target="_blank" rel="noreferrer" td="underline">
-                          Ubojnię - Kuchnię Chaosu
+                        <Anchor href={KARCZMA_URL} target="_blank" rel="noreferrer" td="underline">
+                          Karczmę Bienenwald
                         </Anchor>
                       </Text>
                     </Group>
@@ -335,7 +335,7 @@ export function AboutPage() {
                         <IconCrown size={20} />
                       </ThemeIcon>
                       <Text size="lg" c="etherealBlue.9" lh={1.7}>
-                        Największym punktem w programie Fornostu jest Gra Główna – dwudniowy larp w
+                        Największym punktem w programie Fornostu jest Gra Główna – trzydniowy larp w
                         tolkienowskim świecie Śródziemia. Więcej informacji o Gra Głównej wkrótce!
                         Wszelkie pytania możesz również kierować do nas na{' '}
                         <Anchor

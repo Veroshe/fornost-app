@@ -28,7 +28,7 @@ type EventType = 'ognisko' | 'larp' | 'warsztat' | 'konkurs' | '';
 
 interface EventDetails {
   title: string;
-  description: string;
+  description: string | null;
   location?: string | null;
   organizer?: string | null;
   maxParticipants?: number | string | null;

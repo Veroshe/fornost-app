@@ -10,14 +10,6 @@ import classes from './Hero.module.css';
 export function Hero() {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const handleLearnMoreClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const element = document.getElementById('gdzie-i-kiedy');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
   return (
     <>
       <div
@@ -55,7 +47,9 @@ export function Hero() {
               </Button>
             </Group>
           </Stack>
-          <Countdown />
+          <div className={classes.countdown}>
+            <Countdown />
+          </div>
         </Container>
       </div>
     </>

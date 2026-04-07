@@ -2,6 +2,7 @@ import { Stack } from '@mantine/core';
 import { Hero } from '../components/Hero';
 import { Info } from '../components/Info';
 import { NewsletterBanner } from '../components/NewsletterBanner';
+import Partners from '../components/Partners';
 import { Socials } from '../components/Socials';
 import { AboutPage } from './About.page';
 
@@ -12,7 +13,7 @@ export function HomePage() {
       <AboutPage />
       <NewsletterBanner />
       <Socials />
-      {/* <ThemeShowcase /> */}
+      <Partners />
     </Stack>
   );
 }

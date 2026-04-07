@@ -1,3 +1,4 @@
+import flamberg from './assets/Flamberg.png';
 import blazej from './assets/org/blazej.png';
 import eldarion from './assets/org/eldarion.jpeg';
 import famos from './assets/org/famos.jpg';
@@ -14,6 +15,7 @@ import saverok from './assets/org/saverok.jpg';
 import sharp from './assets/org/sharp.jpg';
 import tyna from './assets/org/tyna.jpg';
 import wero from './assets/org/wero.jpg';
+import orkon from './assets/Orkon.png';
 
 export const FACEBOOK_URL = 'https://www.facebook.com/events/741426278765069';
 export const INSTAGRAM_URL = 'https://www.instagram.com/konwent_fornost/';
@@ -27,6 +29,23 @@ export const MACIEJ_MARGIELSKI_URL = 'https://www.instagram.com/mmargiel/';
 export const KAROLINA_TUL_URL = 'https://www.instagram.com/tulfotografie/';
 export const NEWSLETTER_URL =
   'https://c1f8922b.sibforms.com/serve/MUIFAEdcN0Kk0uNcgoA6lZrlcErakbe41Dy6Kt2beNcfH7ZzWFUE3MECYVH2jv9IAAtyfIbmzWsKRSdm7tXXsEgUR_OZY2zPGExbqo6nXGr1OCEymzTmeOtBwtfGAUGscD_LdtxKS3rODnQP-5TEPUnTOhhpSqy-cTKj3VaiOwqpkVr_k68q8A2MT0eQpJa4wciREHK4WMJCICRL';
+
+export interface MediaPartner {
+  name: string;
+  /** URL do pliku logo – zostaw undefined dopóki logo nie jest gotowe */
+  logo?: string;
+  /** Opcjonalny link do strony partnera */
+  url?: string;
+}
+
+export const MEDIA_PARTNERS: MediaPartner[] = [
+  {
+    name: 'Flamberg',
+    logo: flamberg,
+    url: 'https://www.facebook.com/profile.php?id=100064678691468',
+  },
+  { name: 'Orkon', logo: orkon, url: 'https://www.facebook.com/Orkon.org' },
+];
 
 export const ORGANIZACJA = [
   {

@@ -34,6 +34,7 @@ const navLinks = [
   { link: '/place', label: 'Na miejscu' },
   { link: '/organization', label: 'Organizacja' },
   { link: '/larp', label: 'LARP' },
+  { link: '/regulamin', label: 'Regulamin' },
 ];
 
 export function Footer() {

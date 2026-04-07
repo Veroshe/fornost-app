@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   background-size: cover;
+  isolation: isolate;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 90vh;
@@ -35,14 +36,10 @@
   padding-bottom: 6rem;
 }
 
-.content {
-  animation: fadeInUp 1s ease-out;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -52,6 +49,7 @@
 
 .titleWrapper {
   position: relative;
+  animation: fadeInUp 0.7s ease-out both;
 }
 
 .logoImage {
@@ -66,11 +64,17 @@
   line-height: 1.6;
   font-weight: 400;
   max-width: 650px;
+  animation: fadeInUp 0.7s ease-out 0.2s both;
 }
 
 .controls {
   margin-top: 1rem;
   z-index: 2;
+  animation: fadeInUp 0.7s ease-out 0.4s both;
+}
+
+.countdown {
+  animation: fadeInUp 0.7s ease-out 0.55s both;
 }
 
 /* Responsive */

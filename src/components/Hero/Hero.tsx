@@ -47,9 +47,8 @@ export function Hero() {
               </Button>
             </Group>
           </Stack>
-          <div className={classes.countdown}>
-            <Countdown />
-          </div>
+
+          <Countdown />
         </Container>
       </div>
     </>

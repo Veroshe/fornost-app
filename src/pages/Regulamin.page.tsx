@@ -35,7 +35,7 @@ export function RegulaminPage() {
               Regulamin Konwentu
             </Title>
             <Text c="rgba(255,255,255,0.8)" ta="center" size="lg">
-              Fornost 2025
+              Fornost 2026
             </Text>
           </Stack>
         </Container>
@@ -106,11 +106,11 @@ const sections: Section[] = [
   {
     title: 'Postanowienia Ogólne',
     items: [
-      'Konwent Terenowy Fornost 2025 (zwany dalej "Konwentem") jest organizowany przez Stowarzyszenie Terra Futura z siedzibą przy ulicy Królowej Jadwigi 146A/7, 30-312 w Krakowie, nr KRS 0000321170.',
-      'Konwent odbędzie się na terenie wsi Czatachowa, w Polsce, w dniach 26.07 - 03.08.2025',
+      'Konwent Terenowy Fornost 2026 (zwany dalej "Konwentem") jest organizowany przez Stowarzyszenie Terra Futura z siedzibą przy ulicy Królowej Jadwigi 146A/7, 30-312 w Krakowie, nr KRS 0000321170.',
+      'Konwent odbędzie się na terenie wsi Czatachowa, w Polsce, w dniach 25.07 - 02.08.2026',
       'Uczestnikiem Konwentu (zwanym dalej "Uczestnikiem") może być każda osoba, która dokonała rejestracji, opłaciła składkę uczestnictwa oraz dopełniła wszelkich innych wymaganych formalności.',
-      'Osoby odpowiedzialne za organizację konwentu (zwane dalej zbiorczo "Organizacją") to Weronika Kalinowska, Aleksandra Gąsiorowska, Mateusz Orzechowski, Martyna Królak, Krzysztof Brzoska, Małgorzata Jakubowska, Błażej Kardyś, Ida Pacer, Julia Liszewska, Bartłomiej Brózda i Michał Bąk.',
-      'Głównym punktem programu jest LARP "Przeprawa Królów", który odbywa się w dniach 31.07-02.08.2025 (zwany dalej "Grą Główną" albo w skrócie "GG").',
+      'Osoby odpowiedzialne za organizację konwentu (zwane dalej zbiorczo "Organizacją") to Weronika Kalinowska, Aleksandra Gąsiorowska, Mateusz Orzechowski, Martyna Królak, Małgorzata Brzoska, Julia Liszewska, Mikołaj Para, Michał Bąk, Tomasz Baran, Przemysław Sychta, Igriana Bartoszek, Filip Wróblewski, Michał Poręcki, Krzysztof Brzoska, Błażej Kardyś, Michał Skerczyński.',
+      'Głównym punktem programu jest LARP "Za Garść Mithrilu", który odbywa się w dniach 30.07-01.08.2026 (zwany dalej "Grą Główną" albo w skrócie "GG").',
       'Znajomość i przestrzeganie niniejszego regulaminu obowiązuje każdego Uczestnika Konwentu.',
     ],
   },
@@ -119,12 +119,14 @@ const sections: Section[] = [
     items: [
       'Aby potwierdzić swój udział, należy wypełnić formularz zgłoszeniowy oraz opłacić wejściówkę poprzez dokonanie wpłaty na wskazane konto. Informacje dotyczące płatności zostaną przesłane w mailu potwierdzającym zgłoszenie.',
       'Bilet na cały konwent uprawnia uczestnika do udziału we wszystkich LARPach i atrakcjach na Fornoście, zapewnia nocleg na polu namiotowym oraz wyżywienie w klimatycznej oprawie w przypadku uczestnictwa w LARPie "Przeprawa Królów".',
-      'Sprzedaż biletów na cały konwent odbędzie się w trzech turach: Tura I - do 6 stycznia 2025 - 450 zł; Tura II - od 7 stycznia do 25 lipca - 550 zł bilet normalny, 500 zł bilet dla studenta/ucznia/doktoranta; Tura III - w trakcie trwania konwentu 700 zł bilet normalny, 650 bilet dla studenta/ucznia/doktoranta.',
+      'Sprzedaż biletów na cały konwent odbędzie się w trzech turach: Tura I - do 1 stycznia 2026 - 450 zł; Tura II - do 24 lipca - 600 zł bilet normalny, 550 zł bilet dla studenta/ucznia/doktoranta; Tura III - w trakcie trwania konwentu 650 zł bilet normalny, 600 zł bilet dla studenta/ucznia/doktoranta.',
+      'Bilety na LARP "Za Garść Mithrilu" (Gra Główna Fornostu): 450 zł bilet normalny (dla uczestników powyżej 15 roku życia), 100 zł dla uczestników do 15 roku życia',
       'Istnieje możliwość nabycia biletu jednodniowego za 100 zł, jednak bilet ten nie upoważnia do wzięcia udziału w Grze Głównej.',
-      'Dostępne są również bilety zniżkowe: Bilet dla Helpera - zniżka ustalana indywidualnie; Bilet dla Twórców Atrakcji - system punktowy, maksymalna zniżka 200 zł; Bilet Ad-Hoc - 450 zł, nie upoważnia do udziału w LARPach.',
+      'Dostępne są również bilety zniżkowe: Bilet dla Twórców Atrakcji - system punktowy, maksymalna zniżka 200 zł',
       'Dzieci poniżej 13 roku życia, pod opieką rodzica mogą wziąć udział w Konwencie za darmo.',
       'Po wypełnieniu formularza zgłoszeniowego i dokonaniu opłaty organizacja potwierdza przyjęcie uczestnika w ciągu tygodnia drogą mailową.',
       'W przypadku chęci rezygnacji z udziału w Konwencie po zakupieniu wejściówki, należy skontaktować się z Organizatorami.',
+      'Zwrot biletu (w pełnej kwocie) możliwy jest do 30 czerwca 2026 roku włącznie. Po tym terminie, do dnia rozpoczęcia wydarzenia, przysługuje zwrot w wysokości 50% ceny biletu. Zwrot można uzyskać poprzez kontakt z Organizatorami.',
     ],
   },
   {

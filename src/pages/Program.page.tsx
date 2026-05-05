@@ -36,6 +36,7 @@ interface EventDetails {
   signupLink?: string | null;
   type?: string | null;
   zapisy?: string | null;
+  fb_event_link?: string | null;
 }
 
 type EventDetailsMap = Record<string, EventDetails>;
@@ -718,11 +719,6 @@ export function ProgramPage() {
                 <Text>{selectedEvent.zapisy}</Text>
               </Box>
             )}
-            {selectedEvent.type === 'larp' && (
-              <Text size="sm" fw={700} mb={4}>
-                Design Doc i zapisy na początku maja
-              </Text>
-            )}
 
             {selectedEvent.detailsLink && (
               <Button
@@ -735,6 +731,20 @@ export function ProgramPage() {
                 leftSection={<IconScript size={14} />}
               >
                 Design Doc
+              </Button>
+            )}
+
+            {selectedEvent.fb_event_link && (
+              <Button
+                component="a"
+                href={selectedEvent.fb_event_link}
+                target="_blank"
+                rel="noreferrer"
+                variant="outline"
+                color="etherealBlue"
+                leftSection={<IconScript size={14} />}
+              >
+                Wydarzenie na Facebooku
               </Button>
             )}
             {selectedEvent.type === 'gg' && (

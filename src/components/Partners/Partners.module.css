@@ -47,6 +47,10 @@
   opacity: 0.9;
 }
 
+.bigLogo {
+  height: 6rem;
+}
+
 .placeholder {
   height: 4rem;
   width: 10rem;

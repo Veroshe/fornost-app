@@ -2,9 +2,15 @@ import { Container, Text } from '@mantine/core';
 import { MEDIA_PARTNERS, PARTNERS, type MediaPartner } from '../../edition_constants';
 import classes from './Partners.module.css';
 
-function PartnerLogo({ partner }: { partner: MediaPartner }) {
+function PartnerLogo({ partner, bigLogo }: { partner: MediaPartner; bigLogo?: boolean }) {
+  const invert = partner.invertLogo ?? true;
   const inner = partner.logo ? (
-    <img src={partner.logo} alt={partner.name} className={classes.logo} />
+    <img
+      src={partner.logo}
+      alt={partner.name}
+      className={`${classes.logo} ${bigLogo ? classes.bigLogo : ''}`}
+      style={invert ? undefined : { filter: 'none', opacity: 1 }}
+    />
   ) : (
     <div className={classes.placeholder}>
       <Text size="sm" c="dimmed" ta="center" lh={1.3}>
@@ -41,7 +47,7 @@ export const Partners = () => {
           <Text className={classes.label}>Partnerzy</Text>
           <div className={classes.logos}>
             {PARTNERS.map((partner) => (
-              <PartnerLogo key={partner.name} partner={partner} />
+              <PartnerLogo key={partner.name} partner={partner} bigLogo={true} />
             ))}
           </div>
         </Container>

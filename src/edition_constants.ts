@@ -37,6 +37,8 @@ export interface MediaPartner {
   logo?: string;
   /** Opcjonalny link do strony partnera */
   url?: string;
+  /** Czy zastosować filtr brightness(0) invert(1) – domyślnie true (dla ciemnych logo na przezroczystym tle) */
+  invertLogo?: boolean;
 }
 
 export const MEDIA_PARTNERS: MediaPartner[] = [
@@ -53,6 +55,7 @@ export const PARTNERS: MediaPartner[] = [
     name: 'RGFK',
     logo: rgfk,
     url: 'https://rgfk.pl/',
+    invertLogo: false,
   },
 ];
 

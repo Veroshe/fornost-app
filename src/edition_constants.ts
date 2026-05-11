@@ -16,10 +16,11 @@ import sharp from './assets/org/sharp.jpg';
 import tyna from './assets/org/tyna.jpg';
 import wero from './assets/org/wero.jpg';
 import orkon from './assets/Orkon.png';
+import rgfk from './assets/rgfk.png';
 
 export const FACEBOOK_URL = 'https://www.facebook.com/events/741426278765069';
 export const INSTAGRAM_URL = 'https://www.instagram.com/konwent_fornost/';
-export const DISCORD_URL = 'https://discord.gg/uBxvT9rMGM';
+export const DISCORD_URL = 'https://discord.com/invite/BSypFsey2w';
 
 export const TICKET_FORM_URL = 'https://forms.gle/KQCgwXc6iCkGs6xu7';
 export const KARCZMA_URL = 'https://www.facebook.com/profile.php?id=61560263833757';
@@ -45,6 +46,14 @@ export const MEDIA_PARTNERS: MediaPartner[] = [
     url: 'https://www.facebook.com/profile.php?id=100064678691468',
   },
   { name: 'Orkon', logo: orkon, url: 'https://www.facebook.com/Orkon.org' },
+];
+
+export const PARTNERS: MediaPartner[] = [
+  {
+    name: 'RGFK',
+    logo: rgfk,
+    url: 'https://rgfk.pl/',
+  },
 ];
 
 export const ORGANIZACJA = [

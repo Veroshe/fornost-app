@@ -47,9 +47,9 @@ export function Hero() {
               </Button>
             </Group>
           </Stack>
-
-          <Countdown />
         </Container>
+
+        <Countdown />
       </div>
     </>
   );

@@ -1,42 +1,5 @@
-import tyr4679 from '@/assets/piknik/_TYR4679.jpg';
-import tyr5307_2 from '@/assets/piknik/_TYR5307.jpg';
-import tyr5597 from '@/assets/piknik/_TYR5597.jpg';
-import tyr5628 from '@/assets/piknik/_TYR5628.jpg';
-import tyr5662 from '@/assets/piknik/_TYR5662.jpg';
-import tyr5757 from '@/assets/piknik/_TYR5757.jpg';
-import tyr5769 from '@/assets/piknik/_TYR5769.jpg';
-import tyr5792 from '@/assets/piknik/_TYR5792.jpg';
-import tyr5868 from '@/assets/piknik/_TYR5868.jpg';
-import tyr5888 from '@/assets/piknik/_TYR5888.jpg';
-import tyr5905 from '@/assets/piknik/_TYR5905.jpg';
-import tyr5913 from '@/assets/piknik/_TYR5913.jpg';
-import tyr5921 from '@/assets/piknik/_TYR5921.jpg';
-import tyr5968 from '@/assets/piknik/_TYR5968.jpg';
-import tyr6009 from '@/assets/piknik/_TYR6009.jpg';
-import tyr6015 from '@/assets/piknik/_TYR6015.jpg';
-import tyr6019 from '@/assets/piknik/_TYR6019.jpg';
-import tyr6034 from '@/assets/piknik/_TYR6034.jpg';
-import tyr6042 from '@/assets/piknik/_TYR6042.jpg';
-import tyr6077 from '@/assets/piknik/_TYR6077.jpg';
-import tyr6087 from '@/assets/piknik/_TYR6087.jpg';
-import tyr6123 from '@/assets/piknik/_TYR6123.jpg';
-import tyr6144 from '@/assets/piknik/_TYR6144.jpg';
-import tyr6241 from '@/assets/piknik/_TYR6241.jpg';
-import tyr6265 from '@/assets/piknik/_TYR6265.jpg';
-import tyr6274 from '@/assets/piknik/_TYR6274.jpg';
-import tyr6292 from '@/assets/piknik/_TYR6292.jpg';
-import tyr6320 from '@/assets/piknik/_TYR6320.jpg';
-import tyr6340 from '@/assets/piknik/_TYR6340.jpg';
-import tyr6413 from '@/assets/piknik/_TYR6413.jpg';
-import tyr6425 from '@/assets/piknik/_TYR6425.jpg';
-import tyr6443 from '@/assets/piknik/_TYR6443.jpg';
-import tyr6505 from '@/assets/piknik/_TYR6505.jpg';
-import tyr6564 from '@/assets/piknik/_TYR6564.jpg';
-import tyr6631 from '@/assets/piknik/_TYR6631.jpg';
-import tyr6634 from '@/assets/piknik/_TYR6634.jpg';
-import tyr6641 from '@/assets/piknik/_TYR6641.jpg';
-import tyr6675 from '@/assets/piknik/_TYR6675.jpg';
 import pijacySmok from '@/assets/piknik/pijacy-smok.jpg';
+import tyr4679 from '@/assets/piknik/TYR4679.jpg';
 import tyr4937 from '@/assets/piknik/TYR4937.jpg';
 import tyr5066 from '@/assets/piknik/TYR5066.jpg';
 import tyr5192 from '@/assets/piknik/TYR5192.jpg';
@@ -45,6 +8,42 @@ import tyr5279 from '@/assets/piknik/TYR5279.jpg';
 import tyr5307 from '@/assets/piknik/TYR5307.jpg';
 import tyr5459 from '@/assets/piknik/TYR5459.jpg';
 import tyr5550 from '@/assets/piknik/TYR5550.jpg';
+import tyr5597 from '@/assets/piknik/TYR5597.jpg';
+import tyr5628 from '@/assets/piknik/TYR5628.jpg';
+import tyr5662 from '@/assets/piknik/TYR5662.jpg';
+import tyr5757 from '@/assets/piknik/TYR5757.jpg';
+import tyr5769 from '@/assets/piknik/TYR5769.jpg';
+import tyr5792 from '@/assets/piknik/TYR5792.jpg';
+import tyr5868 from '@/assets/piknik/TYR5868.jpg';
+import tyr5888 from '@/assets/piknik/TYR5888.jpg';
+import tyr5905 from '@/assets/piknik/TYR5905.jpg';
+import tyr5913 from '@/assets/piknik/TYR5913.jpg';
+import tyr5921 from '@/assets/piknik/TYR5921.jpg';
+import tyr5968 from '@/assets/piknik/TYR5968.jpg';
+import tyr6009 from '@/assets/piknik/TYR6009.jpg';
+import tyr6015 from '@/assets/piknik/TYR6015.jpg';
+import tyr6019 from '@/assets/piknik/TYR6019.jpg';
+import tyr6034 from '@/assets/piknik/TYR6034.jpg';
+import tyr6042 from '@/assets/piknik/TYR6042.jpg';
+import tyr6077 from '@/assets/piknik/TYR6077.jpg';
+import tyr6087 from '@/assets/piknik/TYR6087.jpg';
+import tyr6123 from '@/assets/piknik/TYR6123.jpg';
+import tyr6144 from '@/assets/piknik/TYR6144.jpg';
+import tyr6241 from '@/assets/piknik/TYR6241.jpg';
+import tyr6265 from '@/assets/piknik/TYR6265.jpg';
+import tyr6274 from '@/assets/piknik/TYR6274.jpg';
+import tyr6292 from '@/assets/piknik/TYR6292.jpg';
+import tyr6320 from '@/assets/piknik/TYR6320.jpg';
+import tyr6340 from '@/assets/piknik/TYR6340.jpg';
+import tyr6413 from '@/assets/piknik/TYR6413.jpg';
+import tyr6425 from '@/assets/piknik/TYR6425.jpg';
+import tyr6443 from '@/assets/piknik/TYR6443.jpg';
+import tyr6505 from '@/assets/piknik/TYR6505.jpg';
+import tyr6564 from '@/assets/piknik/TYR6564.jpg';
+import tyr6631 from '@/assets/piknik/TYR6631.jpg';
+import tyr6634 from '@/assets/piknik/TYR6634.jpg';
+import tyr6641 from '@/assets/piknik/TYR6641.jpg';
+import tyr6675 from '@/assets/piknik/TYR6675.jpg';
 import { Gallery } from '@/components/Gallery';
 import { KAROLINA_TUL_URL } from '@/edition_constants';
 
@@ -59,7 +58,6 @@ const images = [
   tyr5459,
   tyr5550,
   tyr4679,
-  tyr5307_2,
   tyr5597,
   tyr5628,
   tyr5662,
@@ -102,7 +100,7 @@ export function PiknikGallery() {
   return (
     <Gallery
       images={images}
-      modalTitle="Piknik Tolkienowski 2025"
+      modalTitle="Piknik w Domu Beorna 2024"
       photographer={{
         name: 'Karolina Tul-Jerominek',
         url: KAROLINA_TUL_URL,

@@ -1,5 +1,5 @@
 import { Container, Text } from '@mantine/core';
-import { MEDIA_PARTNERS, type MediaPartner } from '../../edition_constants';
+import { MEDIA_PARTNERS, PARTNERS, type MediaPartner } from '../../edition_constants';
 import classes from './Partners.module.css';
 
 function PartnerLogo({ partner }: { partner: MediaPartner }) {
@@ -24,15 +24,28 @@ function PartnerLogo({ partner }: { partner: MediaPartner }) {
 
 export const Partners = () => {
   return (
-    <section className={classes.section}>
-      <Container size="xl">
-        <Text className={classes.label}>Współpraca medialna</Text>
-        <div className={classes.logos}>
-          {MEDIA_PARTNERS.map((partner) => (
-            <PartnerLogo key={partner.name} partner={partner} />
-          ))}
-        </div>
-      </Container>
-    </section>
+    <>
+      <section className={classes.section}>
+        <Container size="xl">
+          <Text className={classes.label}>Współpraca medialna</Text>
+          <div className={classes.logos}>
+            {MEDIA_PARTNERS.map((partner) => (
+              <PartnerLogo key={partner.name} partner={partner} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className={classes.section}>
+        <Container size="xl">
+          <Text className={classes.label}>Partnerzy</Text>
+          <div className={classes.logos}>
+            {PARTNERS.map((partner) => (
+              <PartnerLogo key={partner.name} partner={partner} />
+            ))}
+          </div>
+        </Container>
+      </section>
+    </>
   );
 };

@@ -35,7 +35,11 @@ const navItems: NavItem[] = [
   { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
 ];
 
-export function Navbar() {
+interface NavbarProps {
+  onOpenMerch: () => void;
+}
+
+export function Navbar({ onOpenMerch }: NavbarProps) {
   const [mobileOpened, { toggle: toggleMobile, close: closeMobile }] = useDisclosure(false);
   const [aboutOpened, setAboutOpened] = useState(false);
   const [scroll] = useWindowScroll();
@@ -111,6 +115,9 @@ export function Navbar() {
 
       <Group gap={5} visibleFrom="sm">
         {desktopItems}
+        <span className={classes.link} style={{ cursor: 'pointer' }} onClick={onOpenMerch}>
+          Merch
+        </span>
       </Group>
 
       <Group gap={5} visibleFrom="sm">
@@ -157,6 +164,14 @@ export function Navbar() {
               );
             })}
             <Menu.Divider />
+            <Menu.Item
+              onClick={() => {
+                closeMobile();
+                onOpenMerch();
+              }}
+            >
+              Merch
+            </Menu.Item>
             <Menu.Item>
               <BuyButton />
             </Menu.Item>

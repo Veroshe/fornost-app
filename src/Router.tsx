@@ -7,6 +7,7 @@ import { HomePage } from './pages/Home.page';
 import { OrganizationPage } from './pages/Organization.page';
 import { PlacePage } from './pages/Place.page';
 import { ProgramPage } from './pages/Program.page';
+import { QuizPage } from './pages/Quiz.page';
 import { RegulaminPage } from './pages/Regulamin.page';
 import { pageview } from './utils/analytics';
 
@@ -77,6 +78,16 @@ const router = createHashRouter([
       <AnalyticsWrapper>
         <Layout>
           <ProgramPage />
+        </Layout>
+      </AnalyticsWrapper>
+    ),
+  },
+  {
+    path: 'quiz',
+    element: (
+      <AnalyticsWrapper>
+        <Layout>
+          <QuizPage />
         </Layout>
       </AnalyticsWrapper>
     ),

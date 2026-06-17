@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { IconCheck, IconHelpCircle, IconStar, IconTrophy, IconX } from '@tabler/icons-react';
+import { IconCheck, IconStar, IconTrophy } from '@tabler/icons-react';
 import {
   Alert,
   Badge,
@@ -18,6 +18,7 @@ import {
   Title,
 } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
+import angryImage from '../assets/angry.png';
 import happyImage from '../assets/happy.jpg';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -478,10 +479,42 @@ function AlreadyCompleted({ result }: { result: SavedResult }) {
   );
 }
 
-function QuizResult({ result }: { result: SavedResult }) {
+interface QuizResultProps {
+  result: SavedResult;
+  questions: QuizQuestion[];
+  answers: Record<number, string>;
+}
+
+/** Returns the display label for a given answer value. */
+function getAnswerLabel(question: QuizQuestion, value: string): string {
+  if (!value) {
+    return '(brak odpowiedzi)';
+  }
+  if (question.type === 'radio') {
+    return question.options.find((opt) => opt.value === value)?.label ?? value;
+  }
+  return value;
+}
+
+/** Returns the correct answer as a human-readable string. */
+function getCorrectLabel(question: QuizQuestion): string {
+  if (question.type === 'radio') {
+    return (
+      question.options.find((opt) => opt.value === question.correctAnswer)?.label ??
+      question.correctAnswer
+    );
+  }
+  return question.correctAnswers.join(' / ');
+}
+
+function QuizResult({ result, questions, answers }: QuizResultProps) {
   const { score, total } = result;
   const won = score >= WINNING_THRESHOLD;
   const pct = Math.round((score / total) * 100);
+
+  const incorrectItems = questions
+    .map((question, index) => ({ question, index, userAnswer: answers[question.id] ?? '' }))
+    .filter(({ question, userAnswer }) => !checkAnswer(question, userAnswer));
 
   return (
     <Stack align="center" gap="xl">
@@ -492,7 +525,7 @@ function QuizResult({ result }: { result: SavedResult }) {
       <Paper p={{ base: 'md', md: 'xl' }} w="100%" maw={560} bg="white" shadow="lg">
         <Stack gap="md">
           <img
-            src={happyImage}
+            src={won ? happyImage : angryImage}
             alt=""
             style={{
               width: '100%',
@@ -536,6 +569,35 @@ function QuizResult({ result }: { result: SavedResult }) {
               Twój wynik to {score}/10. Nieźle – każdy hobbit zaczyna od małych kroków przez
               Śródziemie!
             </Alert>
+          )}
+
+          {!won && incorrectItems.length > 0 && (
+            <>
+              <Divider label="Błędne odpowiedzi" labelPosition="center" />
+              <Stack gap="xs">
+                {incorrectItems.map(({ question, index, userAnswer }) => (
+                  <Box
+                    key={question.id}
+                    p="sm"
+                    style={{
+                      border: '1px solid var(--mantine-color-red-3)',
+                      borderRadius: 'var(--mantine-radius-sm)',
+                      backgroundColor: 'var(--mantine-color-red-0)',
+                    }}
+                  >
+                    <Text size="sm" fw={600} c="dark.7" mb={4}>
+                      {index + 1}. {question.question}
+                    </Text>
+                    <Text size="xs" c="red.7">
+                      ✗ Twoja odpowiedź: {getAnswerLabel(question, userAnswer)}
+                    </Text>
+                    <Text size="xs" c="forestGreen.8">
+                      ✓ Poprawna: {getCorrectLabel(question)}
+                    </Text>
+                  </Box>
+                ))}
+              </Stack>
+            </>
           )}
         </Stack>
       </Paper>
@@ -682,6 +744,7 @@ export function QuizPage() {
     defaultValue: null,
   });
   const [sessionResult, setSessionResult] = useState<SavedResult | null>(null);
+  const [sessionAnswers, setSessionAnswers] = useState<Record<number, string>>({});
 
   // Stable random selection for this session
   const questions = useMemo(
@@ -694,6 +757,7 @@ export function QuizPage() {
     const result: SavedResult = { completed: true, score, total: QUIZ_SIZE };
     setSavedResult(result);
     setSessionResult(result);
+    setSessionAnswers(answers);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -702,7 +766,7 @@ export function QuizPage() {
       return <AlreadyCompleted result={savedResult} />;
     }
     if (sessionResult) {
-      return <QuizResult result={sessionResult} />;
+      return <QuizResult result={sessionResult} questions={questions} answers={sessionAnswers} />;
     }
     return <QuizForm questions={questions} onSubmit={handleSubmit} />;
   };

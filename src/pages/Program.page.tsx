@@ -259,12 +259,12 @@ const rawScheduleData = [
   {
     time: '22-23',
     days: [
-      ['Ognisko - Otwarcie konwentu', ''],
+      ['Ognisko - Otwarcie konwentu', 'Disco Platinium'],
       ['Ognisko', 'Chlarp'],
       ['Ognisko', 'Wiedzówka z G.R.R. Martina', ''],
       ['Ognisko', ''],
       ['Ognisko', 'Fornowizja'],
-      ['Ognisko', 'Disco Platinium'],
+      ['Ognisko', ''],
       ['Ognisko', ''],
       ['Ognisko i zakończenie konwentu', ''],
     ],
@@ -272,12 +272,12 @@ const rawScheduleData = [
   {
     time: '23-00',
     days: [
-      ['Ognisko - Otwarcie konwentu', ''],
+      ['Ognisko - Otwarcie konwentu', 'Disco Platinium'],
       ['Ognisko', ''],
       ['Ognisko', '', ''],
       ['Ognisko', ''],
       ['Ognisko', 'Fornowizja'],
-      ['Ognisko', 'Disco Platinium'],
+      ['Ognisko', ''],
       ['Ognisko', ''],
       ['Ognisko i zakończenie konwentu', ''],
     ],
@@ -285,12 +285,12 @@ const rawScheduleData = [
   {
     time: '00-1',
     days: [
-      ['Ognisko - Otwarcie konwentu', ''],
+      ['Ognisko - Otwarcie konwentu', 'Disco Platinium'],
       ['Ognisko', ''],
       ['Ognisko', '', ''],
       ['Ognisko', ''],
       ['Ognisko'],
-      ['Ognisko', 'Disco Platinium'],
+      ['Ognisko', ''],
       ['Ognisko', ''],
       ['Ognisko i zakończenie konwentu', ''],
     ],
@@ -298,7 +298,7 @@ const rawScheduleData = [
 ];
 
 // Dni z tylko jednym torem (bez równoległych wydarzeń)
-const singleTrackDays = [0, 7]; // Sobota 25.07, Piątek 31.07, Sobota 1.08
+const singleTrackDays = [5, 7]; // Sobota 1.08
 // Dni z trzema torami
 const threeTrackDays = [2]; // Poniedziałek 27.07
 

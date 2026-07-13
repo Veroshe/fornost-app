@@ -66,7 +66,7 @@ export function PlacePage() {
               <Text size="lg" c="etherealBlue.9" lh={1.8} mb="md">
                 Zobacz przygotowaną przez nas{' '}
                 <Anchor
-                  href="#"
+                  href="https://docs.google.com/spreadsheets/d/1J9lHCVVVNate3HOM0jspIGSs-9J4Epb2JKUJfQ4voLA/edit?usp=sharing"
                   c="forestGreen.7"
                   fw={600}
                   td="underline"

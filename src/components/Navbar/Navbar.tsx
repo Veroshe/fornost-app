@@ -32,7 +32,6 @@ const navItems: NavItem[] = [
       { link: '/regulamin', label: 'Regulamin' },
     ],
   },
-  { link: '/quiz', label: 'Quiz' },
   { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
 ];
 

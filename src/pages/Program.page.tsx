@@ -212,7 +212,7 @@ const rawScheduleData = [
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
       ['LARP Avatar: Rozdroża', 'Konkurs wieśmakowy'],
       ['Turniej Juggera', ''],
-      ['Gra Główna - Za Garść Mithrilu', ''],
+      ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
       ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
     ],
@@ -225,8 +225,8 @@ const rawScheduleData = [
       ["LARP Polowanie na Gregora Clegane'a", '', ''],
       ['LARP Avatar: Rozdroża', 'Konkurs wieśmakowy'],
       ['Turniej Juggera', ''],
-      ['Gra Główna - Za Garść Mithrilu', ''],
       ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
+      ['Gra Główna - Za Garść Mithrilu', ''],
       ['Sprzątanie lokacji GG', ''],
     ],
   },
@@ -239,7 +239,7 @@ const rawScheduleData = [
       ['LARP Avatar: Rozdroża', ''],
       ['', ''],
       ['Gra Główna - Za Garść Mithrilu', ''],
-      ['Gra Główna - Za Garść Mithrilu', 'Turniej Fajkowy - w ramach GG'],
+      ['Gra Główna - Za Garść Mithrilu', ''],
       ['Ognisko i zakończenie konwentu', ''],
     ],
   },
@@ -298,7 +298,7 @@ const rawScheduleData = [
 ];
 
 // Dni z tylko jednym torem (bez równoległych wydarzeń)
-const singleTrackDays = [5, 7]; // Sobota 1.08
+const singleTrackDays = [6, 7]; // Sobota 1.08
 // Dni z trzema torami
 const threeTrackDays = [2]; // Poniedziałek 27.07
 

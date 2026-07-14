@@ -298,11 +298,10 @@
   },
   "Turniej Fajkowy - w ramach GG": {
     "title": "Turniej fajkowy",
-    "description": "Turniej Fajkowy - niezwykła tradycja, pojedynek mędrców i amatorów fajkowego ziela. Ta wyjątkowa konfrontacja ma proste zasady: każdy uczestnik dostaje taką samą fajkę i ilość tytoniu. Na znak wszystkie fajki są odpalane i wygrywa ostatnia paląca osoba.",
+    "description": "Bracia i Siostry w Dymie!\n\nBliska jest już godzina, gdy w szranki staną mistrzowie sztuki fajczenia, a aromatyczne obłoki przysłonią niebo. Ściągajcie ze wszystkich stron do Pierwszej Wolnej Osady, by wziąć udział w Turnieju Fajkowym.\nNiechaj zew fajkowego ziela stanie się Waszym drogowskazem. Zgromadźcie się, by w atmosferze szlachetnej rywalizacji, skupienia i kunsztu wyłonić najzdolniejszego z Was – tego, który potrafi najdłużej, najdostojniej i z największą gracją utrzymać żar w swojej fajce, nie pozwalając mu wygasnąć przed czasem.\n\nW dymie ukryta jest mądrość, a w powolnym obłoku – spokój ducha. Niechaj ten, kto włada cybuchem z największą wirtuozerią, zostanie ukoronowany w sławie!\nMistrzem Ceremonii będzie Bajarz Arandir (Eldarion), który dopilnuje zmagań, by tradycja została uszanowana, a werdykt był sprawiedliwy.\nNiech dym unosi się wysoko, a przyjaźń między fajczarzami kwitnie w najlepsze. Oczekujemy Was z niecierpliwością – niech zwycięży najlepszy!\n\n—---\n\nCo warto wiedzieć:\nMiejsce spotkania: Karczma w Pierwszej Wolnej Osadzie (ingame)\nCzas spotkania: 31.07 18:00\nWymagania: Fajka turniejowa (120 zł) - klimatyczna, ze zdobieniami i logiem Fornostu, bezfiltrowa. Materiał: drewno różane.\nUWAGA: Ilość fajek ograniczona, decyduje kolejność zgloszen!!!",
     "organizer": "Michał 'Eldarion' Skerczyński",
     "maxParticipants": 10,
-    "signupLink": null,
-    "detailsLink": null,
-    "zapisy": "Szczegóły, takie jak wysokość składki i link do zapisów, będą publikowane wkrótce na wydarzeniu facebookowym i na discordzie."
+    "signupLink": "https://forms.gle/KRWcmFk3mRY7uwme6",
+    "detailsLink": null
   }
 }

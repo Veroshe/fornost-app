@@ -90,7 +90,7 @@ export function Info() {
                 Czatachowa
               </Anchor>
               <Text size="lg" fw={500} c="forestGreen.9" mb="sm" mt="sm'">
-                25.07 - 02.08.2026
+                24.07 - 01.08.2027
               </Text>
 
               <Text size="lg" c="etherealBlue.9">

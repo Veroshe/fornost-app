@@ -1,7 +1,7 @@
 import { Button, Container, Group, Stack, Text } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import bannerImageMobile from '../../assets/banner-pionowy-2026.jpg';
-import bannerImageDesktop from '../../assets/banner-poziomy-2026.jpg';
+import bannerImageMobile from '../../assets/baner-pionowy-2027.jpg';
+import bannerImageDesktop from '../../assets/baner-poziomy-2027.jpg';
 import napisImage from '../../assets/napis.png';
 import { BuyButton } from '../common/BuyButton';
 import { Countdown } from '../Countdown';
@@ -24,12 +24,12 @@ export function Hero() {
               <img src={napisImage} alt="Fornost - Konwent Larpowy" className={classes.logoImage} />
             </div>
 
-            <Text className={classes.tagline}>
+            <Text className={classes.tagline} size="lg">
               Tygodniowy konwent fantasy w Czatachowej (Jura Krakowsko-Chęstochowska). Larpy,
               warsztaty, konkursy i 3-dniowy LARP w świecie J.R.R. Tolkiena.
             </Text>
 
-            <Group className={classes.controls}>
+            {/* <Group className={classes.controls}>
               <BuyButton />
               <Button
                 size="lg"
@@ -45,7 +45,7 @@ export function Hero() {
               >
                 Program konwentu
               </Button>
-            </Group>
+            </Group> */}
           </Stack>
         </Container>
 

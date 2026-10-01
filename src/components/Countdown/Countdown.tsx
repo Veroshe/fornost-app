@@ -10,7 +10,7 @@ interface TimeLeft {
 }
 
 export function Countdown() {
-  const targetDate = new Date('2026-07-25T00:00:00').getTime();
+  const targetDate = new Date('2027-07-24T00:00:00').getTime();
 
   const calculateTimeLeft = (): TimeLeft => {
     const now = new Date().getTime();

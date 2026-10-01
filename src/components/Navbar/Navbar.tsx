@@ -3,7 +3,7 @@ import { Link, NavLink, useMatch } from 'react-router-dom';
 import { Box, Burger, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import logoImage from '../../assets/logo-white.png';
-import { BuyButton } from '../common/BuyButton';
+// import { BuyButton } from '../common/BuyButton'; // ukryte razem z przyciskiem "Kup bilet"
 import classes from './Navbar.module.css';
 
 interface NavLink {
@@ -32,7 +32,8 @@ const navItems: NavItem[] = [
       { link: '/regulamin', label: 'Regulamin' },
     ],
   },
-  { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
+  // Ukryte do czasu ogłoszenia Gry Głównej 2027
+  // { link: '/larp', label: 'LARP "Za Garść Mithrillu"', special: true },
 ];
 
 export function Navbar() {
@@ -113,8 +114,9 @@ export function Navbar() {
         {desktopItems}
       </Group>
 
+      {/* Ukryte do czasu otwarcia sprzedaży biletów na 2027 */}
       <Group gap={5} visibleFrom="sm">
-        <BuyButton />
+        {/* <BuyButton /> */}
       </Group>
 
       {/* Mobile */}
@@ -156,11 +158,6 @@ export function Navbar() {
                 </Menu.Item>
               );
             })}
-            <Menu.Divider />
-
-            <Menu.Item>
-              <BuyButton />
-            </Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </Group>

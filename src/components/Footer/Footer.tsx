@@ -54,7 +54,7 @@ export function Footer() {
             Konwent Larpowy w Czatachowej
           </Text>
           <Text size="sm" c="dimmed" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>
-            25.07 - 02.08.2026
+            24.07 - 01.08.2027
           </Text>
         </div>
 

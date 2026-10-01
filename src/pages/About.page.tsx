@@ -77,7 +77,7 @@ export function AboutPage() {
                         <IconCalendar size={16} />
                       </ThemeIcon>
                       <Text size="lg" fw={600} c="forestGreen.9" style={{ lineHeight: 1.2 }}>
-                        25.07 - 02.08.2026
+                        24.07 - 01.08.2027
                       </Text>
                     </Group>
 
@@ -216,11 +216,12 @@ export function AboutPage() {
                         oferujący śniadania, dania z grilla i (zamawiane dzień wcześniej) zestawy
                         obiadowe. Oprócz posiłków, Przystań Leśniów będzie mieć w swoim asortymencie
                         ciepłe i zimne napoje (zarówno alkoholowe, jak i bezalkoholowe) oraz
-                        przekąski. <br /> W czasie LARPA 'Za Garść Mithrilu' uczestników żywić
+                        przekąski. <br />
+                        {/* W czasie LARPA 'Za Garść Mithrilu' uczestników żywić
                         będzie karczma in-game prowadzona przez{' '}
                         <Anchor href={KARCZMA_URL} target="_blank" rel="noreferrer" td="underline">
                           Karczmę Bienenwald
-                        </Anchor>
+                        </Anchor> */}
                       </Text>
                     </Group>
 
@@ -285,6 +286,10 @@ export function AboutPage() {
                   <IconTicket size={20} />
                 </ThemeIcon>
                 <Text size="lg" c="etherealBlue.9" lh={1.7}>
+                  Wkrótce bilety będą dostępne do zakupu!
+                </Text>
+              </Group>
+              {/* <Text size="lg" c="etherealBlue.9" lh={1.7}>
                   Zakup biletu uprawnia do udziału w programie konwentu(Gra Główna - "Za Garść
                   Mithrilu", Warsztaty, Konkursy, Turnieje) oraz do korzystania z pola namiotowego.
                   Szczegóły dotyczące cen i opcji biletów znajdziesz w formularzu do którego link
@@ -294,7 +299,7 @@ export function AboutPage() {
 
               <Group justify="center" mt="xl">
                 <BuyButton />
-              </Group>
+              </Group> */}
             </Card>
 
             {/* Atrakcje */}

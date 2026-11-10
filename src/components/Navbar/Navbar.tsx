@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { IconClipboardList } from '@tabler/icons-react';
 import { Link, NavLink, useMatch } from 'react-router-dom';
 import { Box, Burger, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
+import { PROGRAM_SUBMISSION_URL } from '@/edition_constants';
 import logoImage from '../../assets/logo-white.png';
 // import { BuyButton } from '../common/BuyButton'; // ukryte razem z przyciskiem "Kup bilet"
+import { ProgramSubmissionButton } from '../common/ProgramSubmissionButton';
 import classes from './Navbar.module.css';
 
 interface NavLink {
@@ -114,8 +117,9 @@ export function Navbar() {
         {desktopItems}
       </Group>
 
-      {/* Ukryte do czasu otwarcia sprzedaży biletów na 2027 */}
       <Group gap={5} visibleFrom="sm">
+        <ProgramSubmissionButton />
+        {/* Ukryte do czasu otwarcia sprzedaży biletów na 2027 */}
         {/* <BuyButton /> */}
       </Group>
 
@@ -158,6 +162,18 @@ export function Navbar() {
                 </Menu.Item>
               );
             })}
+            <Menu.Divider />
+            <Menu.Item
+              component="a"
+              href={PROGRAM_SUBMISSION_URL}
+              target="_blank"
+              rel="noreferrer"
+              onClick={closeMobile}
+              leftSection={<IconClipboardList size={16} />}
+              fw={600}
+            >
+              Zgłoś punkt programu
+            </Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </Group>

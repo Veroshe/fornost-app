@@ -20,6 +20,7 @@ import marekMobileImg from '@/assets/marek_mobile.jpg';
 import marekImg from '@/assets/marek.jpg';
 import szarpMobileImg from '@/assets/szarp_mobile.jpg';
 import szarpImg from '@/assets/szarp.jpg';
+import { PROGRAM_SUBMISSION_URL } from '@/edition_constants';
 import classes from './Info.module.css';
 
 const interactiveSections = [
@@ -109,7 +110,6 @@ export function Info() {
                 <Text size="lg" mb="sm" c="etherealBlue.9">
                   bilet normalny - 450zł (I tura przedsprzedaży)
                 </Text>
-                ś
                 <Button
                   size="lg"
                   color="forestGreen.8"
@@ -131,12 +131,12 @@ export function Info() {
               </Title>
               <Flex justify="space-between" direction="column" gap="md" h="100%">
                 <Text size="lg" mb="sm" c="etherealBlue.9">
-                  Ogłoszenia programu w pierwszych miesiącach 2026 roku!
+                  Ogłoszenia programu w pierwszych miesiącach 2027 roku!
                 </Text>
                 <Button
                   size="lg"
                   color="forestGreen.8"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScmwMNDNLM030eFltJXix-dTNooU5f0IoRgMbMT-_PACKFK-g/viewform"
+                  href={PROGRAM_SUBMISSION_URL}
                   target="_blank"
                   rel="noreferrer"
                   component="a"

@@ -140,7 +140,7 @@ export const ORGANIZACJA: OrganizacjaMember[] = [
   },
   {
     name: "Filip 'Famos' Wróblewski",
-    role: 'Koordynator Gry Głównej 2027',
+    role: 'Koordynator i MG Gry Głównej 2027',
     color: 'etherealBlue',
     group: 'gra-glowna',
     image: famos,
@@ -161,7 +161,7 @@ export const ORGANIZACJA: OrganizacjaMember[] = [
   },
   {
     name: "Aleksandra 'Olca' Gąsiorowska",
-    role: 'MG Gry Głównej 2027',
+    role: 'Karty postaci',
     color: 'etherealBlue',
     group: 'gra-glowna',
     image: olca,
